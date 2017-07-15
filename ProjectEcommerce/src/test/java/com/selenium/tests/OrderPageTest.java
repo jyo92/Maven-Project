@@ -7,30 +7,25 @@ import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
 import com.selenium.pages.HomePage;
+import com.selenium.pages.OrderPage;
 
-public class HomePageTest extends BrowserDetails
+public class OrderPageTest extends BrowserDetails
 {
 	private WebDriver driver;
 	private HomePage homePage;
+	private OrderPage orderPage;
 	
 	@BeforeClass
 	public void setUp()
 	{
 		driver = getDriver();
 		homePage = new HomePage(driver);
+		orderPage = homePage.clickOnCart();
 	}
 	
 	@Test
-	public void testHomePageTitle()
+	public void testCartIsEmpty()
 	{
-		System.out.println(homePage.homePageTitle());
-	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
+		Assert.assertTrue(orderPage.VerifyCartIsEmpty(), "Cart is not showing empty");
 	}
-	
-	@Test
-	public void addToCart()
-	{
-		homePage.hoverAndAddToCart();
-	}
-	
 }

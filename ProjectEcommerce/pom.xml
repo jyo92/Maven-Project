@@ -47,6 +47,7 @@
 <version>2.6</version>
 
 <configuration>
+<showSuccess>false</showSuccess>
 <suiteXmlFiles>
 <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 </suiteXmlFiles>

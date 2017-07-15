@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
   <parameter name="browserType" value="chrome"></parameter>
-  <parameter name="appURL" value="http://live.guru99.com//"></parameter>
+  <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter>
     <classes>
       <class name="com.selenium.common.BrowserDetails"/>
       <class name="com.selenium.tests.HomePageTest"/>
