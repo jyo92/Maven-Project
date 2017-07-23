@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="appURL" value="http://automationpractice.com/index.php"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="appURL" value="http://automationpractice.com/index.php"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.selenium.tests.HomePageTest">
+        <methods>
+          <include name="testHomePageTitle"/>
+          <include name="setUp"/>
+          <include name="baseSetUp"/>
+        </methods>
+      </class> <!-- com.selenium.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

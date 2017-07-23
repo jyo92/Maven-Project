@@ -1,6 +1,5 @@
 package com.selenium.tests;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -21,7 +20,6 @@ public class OrderPageTest extends BrowserDetails
 	public void setUp()
 	{
 		driver = getDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		homePage = new HomePage(driver);
 		orderPage = homePage.clickOnCart();
 	}

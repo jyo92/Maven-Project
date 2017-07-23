@@ -1,5 +1,7 @@
 package com.selenium.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +18,7 @@ public class OrderPage
 	public OrderPage(WebDriver driver)
 	{
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
     public boolean VerifyCartIsEmpty()
