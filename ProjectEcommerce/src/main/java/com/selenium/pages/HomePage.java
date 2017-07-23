@@ -1,10 +1,13 @@
 package com.selenium.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage 
@@ -20,15 +23,19 @@ public class HomePage
 	private By addToCartBtn = By.xpath(".//*[@id='homefeatured']/li[1]/div/div[2]/div[2]/a[1]/span");
 	private WebElement addToCartBtnElmt;
 	
+	private By proceedToChkOut = By.xpath(".//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span");
+	
 	public String ExpectedHomePageTitle;
 	public String ActualHomePageTitle;
 	public boolean homeTitleResult;
 	public Actions actions;
 	public JavascriptExecutor jse;
+	public WebDriverWait wait;
 	
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		jse = (JavascriptExecutor)driver;
 	}
 	
@@ -60,5 +67,7 @@ public class HomePage
 		actions.moveToElement(fadesdShortImgElmt).build().perform();
 		addToCartBtnElmt = driver.findElement(addToCartBtn);
 		addToCartBtnElmt.click();
+		wait = new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(proceedToChkOut)).click();
 	}
 }
