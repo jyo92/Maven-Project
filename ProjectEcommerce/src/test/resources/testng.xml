@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+<listener class-name="com.selenium.common.Listeners"></listener>
+</listeners>
   <test name="Test">
   <parameter name="browserType" value="chrome"></parameter>
   <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter>
     <classes>
       <class name="com.selenium.common.BrowserDetails"/>
-      <class name="com.selenium.tests.HomePageTest"/>
+      <class name="com.selenium.tests.OrderPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

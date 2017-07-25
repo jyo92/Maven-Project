@@ -3,17 +3,20 @@
 <suite name="Failed suite [Suite]">
   <parameter name="appURL" value="http://automationpractice.com/index.php"/>
   <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.selenium.common.Listeners"/>
+  </listeners>
   <test name="Test(failed)">
     <parameter name="appURL" value="http://automationpractice.com/index.php"/>
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.selenium.tests.HomePageTest">
+      <class name="com.selenium.tests.OrderPageTest">
         <methods>
-          <include name="testHomePageTitle"/>
-          <include name="setUp"/>
           <include name="baseSetUp"/>
+          <include name="setUp"/>
+          <include name="testCartIsEmpty"/>
         </methods>
-      </class> <!-- com.selenium.tests.HomePageTest -->
+      </class> <!-- com.selenium.tests.OrderPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

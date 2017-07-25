@@ -23,7 +23,7 @@ public class HomePage
 	private By addToCartBtn = By.xpath(".//*[@id='homefeatured']/li[1]/div/div[2]/div[2]/a[1]/span");
 	private WebElement addToCartBtnElmt;
 	
-	private By proceedToChkOut = By.xpath(".//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span");
+	private By proceedToChkOut = By.xpath(".//*[@id='layer_cart']/div[1]/div[2]/div[]/a/span");
 	
 	public String ExpectedHomePageTitle;
 	public String ActualHomePageTitle;
@@ -46,7 +46,7 @@ public class HomePage
 	
 	public boolean verifyHomePageTitle()
 	{
-		ExpectedHomePageTitle = "My Store";
+		ExpectedHomePageTitle = "My Store ";
 		ActualHomePageTitle = homePageTitle();
 		homeTitleResult = ActualHomePageTitle.equalsIgnoreCase(ExpectedHomePageTitle);
 		return homeTitleResult;
