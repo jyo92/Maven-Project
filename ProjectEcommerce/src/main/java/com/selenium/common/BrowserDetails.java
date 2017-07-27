@@ -9,7 +9,6 @@ import org.testng.annotations.Parameters;
 public class BrowserDetails 
 {
 	private WebDriver driver;
-	public String excelLocation = "./src/main/resources/EcommerceProject.xlsx";
 	
 	public WebDriver getDriver()
 	{
@@ -33,7 +32,6 @@ public class BrowserDetails
 			driver = initChromeDriver(appURL);
 		
 		}
-		
 	}
 
 
@@ -41,7 +39,7 @@ public class BrowserDetails
 	{
 		System.out.println("Initializing chrome browser");
 		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("chromePath"));
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
 		return driver;
@@ -50,7 +48,7 @@ public class BrowserDetails
 	private WebDriver initFirefoxDriver(String URL)
 	{
 		System.out.println("Initializing firefox browser");
-		WebDriver driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		driver.get(URL);
 		driver.manage().window().maximize();
 		return driver;
@@ -60,7 +58,7 @@ public class BrowserDetails
 	{
 		System.out.println("Initializing ie browser");
 		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("iePath"));
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
 		return driver;

@@ -4,12 +4,12 @@
 <listeners>
 <listener class-name="com.selenium.common.Listeners"></listener>
 </listeners>
-  <test name="Test">
+  <test name="chromeTest">
   <parameter name="browserType" value="chrome"></parameter>
   <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter>
     <classes>
       <class name="com.selenium.common.BrowserDetails"/>
-      <class name="com.selenium.tests.OrderPageTest"/>
+      <class name="com.selenium.tests.ContactPageTest"/>
     </classes>
-  </test> <!-- Test -->
+    </test>
 </suite> <!-- Suite -->

@@ -23,7 +23,7 @@ public class OrderPage
 	
     public boolean VerifyCartIsEmpty()
     {
-    	cartExpectedResult = " Your shopping cart is empty.";
+    	cartExpectedResult = "Your shopping cart is empty.";
     	cartTextElmt = driver.findElement(cartText);
     	cartActualResult = cartTextElmt.getText();
     	System.out.println(cartActualResult);

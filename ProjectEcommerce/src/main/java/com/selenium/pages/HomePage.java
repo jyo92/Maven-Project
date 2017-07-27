@@ -23,11 +23,15 @@ public class HomePage
 	private By addToCartBtn = By.xpath(".//*[@id='homefeatured']/li[1]/div/div[2]/div[2]/a[1]/span");
 	private WebElement addToCartBtnElmt;
 	
-	private By proceedToChkOut = By.xpath(".//*[@id='layer_cart']/div[1]/div[2]/div[]/a/span");
+	private By proceedToChkOut = By.xpath(".//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span");
 	
-	public String ExpectedHomePageTitle;
+	private By contactBtn = By.xpath(".//*[@id='contact-link']/a");
+	private WebElement contactBtnElmt;
+	
+	public String ExpectedHomePageTitle = "My Store";
 	public String ActualHomePageTitle;
 	public boolean homeTitleResult;
+	
 	public Actions actions;
 	public JavascriptExecutor jse;
 	public WebDriverWait wait;
@@ -46,7 +50,6 @@ public class HomePage
 	
 	public boolean verifyHomePageTitle()
 	{
-		ExpectedHomePageTitle = "My Store ";
 		ActualHomePageTitle = homePageTitle();
 		homeTitleResult = ActualHomePageTitle.equalsIgnoreCase(ExpectedHomePageTitle);
 		return homeTitleResult;
@@ -57,6 +60,13 @@ public class HomePage
 		cartElmt = driver.findElement(cart);
 		cartElmt.click();
 		return new OrderPage(driver);
+	}
+	
+	public ContactPage clickContactUs()
+	{
+		contactBtnElmt = driver.findElement(contactBtn);
+		contactBtnElmt.click();
+		return new ContactPage(driver);
 	}
 	
 	public void hoverAndAddToCart()

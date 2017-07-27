@@ -6,17 +6,17 @@
   <listeners>
     <listener class-name="com.selenium.common.Listeners"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="chromeTest(failed)">
     <parameter name="appURL" value="http://automationpractice.com/index.php"/>
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.selenium.tests.OrderPageTest">
+      <class name="com.selenium.tests.ContactPageTest">
         <methods>
-          <include name="baseSetUp"/>
           <include name="setUp"/>
-          <include name="testCartIsEmpty"/>
+          <include name="testContactPageHeaderText"/>
+          <include name="baseSetUp"/>
         </methods>
-      </class> <!-- com.selenium.tests.OrderPageTest -->
+      </class> <!-- com.selenium.tests.ContactPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
