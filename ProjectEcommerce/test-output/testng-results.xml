@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30255" started-at="2017-07-25T04:38:36Z" finished-at="2017-07-25T04:39:06Z">
+  <suite name="Suite" duration-ms="21852" started-at="2017-07-27T03:47:18Z" finished-at="2017-07-27T03:47:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30255" started-at="2017-07-25T04:38:36Z" finished-at="2017-07-25T04:39:06Z">
+    <test name="Test" duration-ms="21852" started-at="2017-07-27T03:47:18Z" finished-at="2017-07-27T03:47:40Z">
       <class name="com.selenium.tests.OrderPageTest">
-        <test-method status="PASS" signature="baseSetUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="baseSetUp" is-config="true" duration-ms="24242" started-at="2017-07-25T10:08:36Z" finished-at="2017-07-25T10:09:00Z">
+        <test-method status="PASS" signature="baseSetUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="baseSetUp" is-config="true" duration-ms="17987" started-at="2017-07-27T09:17:18Z" finished-at="2017-07-27T09:17:36Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseSetUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="setUp" is-config="true" duration-ms="4371" started-at="2017-07-25T10:09:00Z" finished-at="2017-07-25T10:09:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="setUp" is-config="true" duration-ms="2308" started-at="2017-07-27T09:17:36Z" finished-at="2017-07-27T09:17:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testCartIsEmpty()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="testCartIsEmpty" duration-ms="172" started-at="2017-07-25T10:09:04Z" finished-at="2017-07-25T10:09:05Z">
+        <test-method status="FAIL" signature="testCartIsEmpty()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="testCartIsEmpty" duration-ms="182" started-at="2017-07-27T09:17:39Z" finished-at="2017-07-27T09:17:39Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Cart is not showing empty expected [true] but found [false]]]>

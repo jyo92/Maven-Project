@@ -1,0 +1,8 @@
+
+Chrome driver location
+chromePath=./Drivers/ChromeDriver/chromedriver.exe
+
+
+
+IE driver location
+iePath=./Drivers/IEDriver/IEDriverServer.exe

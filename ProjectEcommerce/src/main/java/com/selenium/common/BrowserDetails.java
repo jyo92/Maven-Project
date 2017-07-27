@@ -40,7 +40,7 @@ public class BrowserDetails
 	private WebDriver initChromeDriver(String URL)
 	{
 		System.out.println("Initializing chrome browser");
-		System.setProperty("webdriver.chrome.driver",ReadExcel.excelReading(excelLocation,"Drivers",1,1));
+		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("chromePath"));
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
@@ -59,7 +59,7 @@ public class BrowserDetails
 	private WebDriver initIeDriver(String URL) 
 	{
 		System.out.println("Initializing ie browser");
-		System.setProperty("webdriver.chrome.driver",ReadExcel.excelReading(excelLocation,"Drivers",3,1));
+		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("iePath"));
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
