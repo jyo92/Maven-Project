@@ -11,6 +11,7 @@ public class ReadPropertyFile
 	public static File file;
 	public static FileInputStream fis;
 	public static Properties prop;
+	public static String value;
 	 
 	public static String propertyRead(String key)
 	{
@@ -22,6 +23,7 @@ public class ReadPropertyFile
 				fis = new FileInputStream(file);
 				prop = new Properties();
 				prop.load(fis);
+				value = prop.getProperty(key);
 				fis.close();
 			}
 			catch (FileNotFoundException e) 
@@ -33,6 +35,6 @@ public class ReadPropertyFile
 		{
 			e.printStackTrace();
 		}
-		return prop.getProperty(key);
+		return value;
 	}
 }
