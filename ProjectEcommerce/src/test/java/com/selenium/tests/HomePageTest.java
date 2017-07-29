@@ -23,7 +23,6 @@ public class HomePageTest extends BrowserDetails
 	@Test(priority = 0)
 	public void testHomePageTitle() throws Exception
 	{
-		System.out.println(homePage.homePageTitle());
 	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
 	}
 	

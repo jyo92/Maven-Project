@@ -47,7 +47,7 @@ public class Listeners extends TestListenerAdapter
         File file = ss.getScreenshotAs(OutputType.FILE);
         try 
         {
-			org.apache.commons.io.FileUtils.copyFile(file,new File("./ScreenShot/"+result.getName()+".png"));
+			org.apache.commons.io.FileUtils.copyFile(file,new File("./ScreenShots/"+result.getName()+".png"));
 		} 
         catch (IOException e) 
         {

@@ -7,13 +7,12 @@ import java.util.Properties;
 
 public class ReadPropertyFile 
 {
-	private static String propertyFileLocation = "./src/main/resources/DriverLocation.property";
 	public static File file;
 	public static FileInputStream fis;
 	public static Properties prop;
 	public static String value;
 	 
-	public static String propertyRead(String key)
+	public static String propertyRead(String propertyFileLocation, String key)
 	{
 		try
 		{

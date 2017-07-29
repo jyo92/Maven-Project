@@ -24,9 +24,39 @@ public void setUp()
 	contactPage = homePage.clickContactUs();
 }
 
-@Test
+@Test(priority = 0)
 public void testContactPageHeaderText()
 {
 	Assert.assertTrue(contactPage.verifyContactPageHeaderText(), "Header of contact page is not matched");
+}
+
+@Test(priority = 1)
+public void testsubjectDownList()
+{
+	Assert.assertEquals(contactPage.actualDdownList, contactPage.expectedDdownList, "Subject drop down list is not correct");
+}
+
+@Test(enabled=false)
+public void testEmailErrorMsg()
+{
+	Assert.assertTrue(contactPage.verifyErrMsgAllBlank(),"Either error messages are not correct or Error message is not displayed");
+}
+
+@Test(enabled=false)
+public void testMessageBoxErrorMsg()
+{
+	Assert.assertTrue(contactPage.verifyErrIfMsgBoxBlank(),"Either error messages are not correct or Error message is not displayed");
+}
+
+@Test(enabled=false)
+public void testsubjectddErrorMsg()
+{
+	Assert.assertTrue(contactPage.verifyErrIfDdBlank(),"Unwanted Error message is displayed");
+}
+
+@Test(priority = 2)
+public void testFileUpload()
+{
+	contactPage.verifyFileUpload();
 }
 }

@@ -9,6 +9,7 @@ import org.testng.annotations.Parameters;
 public class BrowserDetails 
 {
 	private WebDriver driver;
+	private String driverPropertyFilePath = "./src/main/resources/DriverLocation.property";
 	
 	public WebDriver getDriver()
 	{
@@ -38,7 +39,7 @@ public class BrowserDetails
 	private WebDriver initChromeDriver(String URL)
 	{
 		System.out.println("Initializing chrome browser");
-		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("chromePath"));
+		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead(driverPropertyFilePath,"chromePath"));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
@@ -57,7 +58,7 @@ public class BrowserDetails
 	private WebDriver initIeDriver(String URL) 
 	{
 		System.out.println("Initializing ie browser");
-		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead("iePath"));
+		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead(driverPropertyFilePath,"iePath"));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);

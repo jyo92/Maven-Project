@@ -1,0 +1,11 @@
+Enter Email in TextBox
+
+email = abc@mail.com
+
+Enter text in Message Box
+
+message = abcd
+
+Upload file path
+
+uploadFilePath = C:\\Users\\JYOTIRMOY\\Desktop\\abc.docx

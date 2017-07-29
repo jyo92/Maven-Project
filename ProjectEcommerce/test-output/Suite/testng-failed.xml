@@ -13,7 +13,7 @@
       <class name="com.selenium.tests.ContactPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="testContactPageHeaderText"/>
+          <include name="testUnwantedErrorMsg"/>
           <include name="baseSetUp"/>
         </methods>
       </class> <!-- com.selenium.tests.ContactPageTest -->
