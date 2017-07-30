@@ -28,6 +28,10 @@ public class HomePage
 	private By contactBtn = By.xpath(".//*[@id='contact-link']/a");
 	private WebElement contactBtnElmt;
 	
+	private By signInBtn = By.xpath(".//*[@class='login']");
+	private WebElement signInBtnElmt;
+	
+	
 	public String ExpectedHomePageTitle = "My Store";
 	public String ActualHomePageTitle;
 	public boolean homeTitleResult;
@@ -69,9 +73,20 @@ public class HomePage
 		return new ContactPage(driver);
 	}
 	
-	public void hoverAndAddToCart()
+	public LoginPage clickOnSignIn()
+	{
+		signInBtnElmt = driver.findElement(signInBtn);
+		signInBtnElmt.click();
+		return new LoginPage(driver);
+	}
+	
+	
+	
+	public OrderPage hoverAndAddToCart()
 	{
 		jse.executeScript("window.scroll(0,850)");
+		try
+		{
 		fadesdShortImgElmt = driver.findElement(fadesdShortImg);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(fadesdShortImgElmt).build().perform();
@@ -79,5 +94,11 @@ public class HomePage
 		addToCartBtnElmt.click();
 		wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(proceedToChkOut)).click();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return new OrderPage(driver);
 	}
 }

@@ -10,13 +10,13 @@
     <parameter name="appURL" value="http://automationpractice.com/index.php"/>
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.selenium.tests.ContactPageTest">
+      <class name="com.selenium.tests.OrderPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="testUnwantedErrorMsg"/>
+          <include name="testSelectedPdctAndChkOut"/>
           <include name="baseSetUp"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.selenium.tests.ContactPageTest -->
+      </class> <!-- com.selenium.tests.OrderPageTest -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

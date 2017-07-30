@@ -9,3 +9,7 @@ message = abcd
 Upload file path
 
 uploadFilePath = C:\\Users\\JYOTIRMOY\\Desktop\\abc.docx
+
+Default file upload text
+
+defaultText = No file selected

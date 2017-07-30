@@ -46,11 +46,13 @@ private WebElement chooseFileBtnElmt;
 
 private By emailTextBox = By.id("email");
 private WebElement emailTextBoxElmt;
-private String emailTextBoxContent;
 
 private By messageBox = By.id("message");
 private WebElement messageBoxElmt;
-private String messageBoxContent;
+
+private By textBoxForFile = By.xpath(".//*[@class='filename']");
+private WebElement textBoxForFileElmt;
+private boolean fileUploadRslt;
 
 private String expectedContactPageHeaderText = "CUSTOMER SERVICE - CONTACT US";
 private String actualContactPageHeaderText;
@@ -273,12 +275,23 @@ public boolean resultOfSubjectddErrMsg()
 	return subjectddErrorElmt.getText().contains(expectedSubjectddErr);
 }
 
-public void verifyFileUpload()
+public boolean verifyFileUpload()
 {
 	chooseFileBtnElmt = driver.findElement(chooseFileBtn);
 	chooseFileBtnElmt.click();
 	String uploadFilePath = ReadPropertyFile.propertyRead(contactPropertyFilePath, "uploadFilePath");
 	UploadFile.fileUpload(uploadFilePath);
+	textBoxForFileElmt = driver.findElement(textBoxForFile);
+	String defaultText = ReadPropertyFile.propertyRead(contactPropertyFilePath, "defaultText");
+	if(textBoxForFileElmt.getText().contains(defaultText))
+	{
+		fileUploadRslt = false;
+	}
+	else
+	{
+		fileUploadRslt = true;
+	}
+	return fileUploadRslt;
 }
 
 }

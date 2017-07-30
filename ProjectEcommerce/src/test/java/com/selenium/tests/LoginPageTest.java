@@ -7,24 +7,25 @@ import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
 import com.selenium.pages.HomePage;
+import com.selenium.pages.LoginPage;
 
-public class HomePageTest extends BrowserDetails
+public class LoginPageTest extends BrowserDetails
 {
 	private WebDriver driver;
 	private HomePage homePage;
+	private LoginPage loginPage;
 	
 	@BeforeClass
 	public void setUp()
 	{
 		driver = getDriver();
 		homePage = new HomePage(driver);
+		loginPage = homePage.clickOnSignIn();
 	}
 	
 	@Test(priority = 0)
-	public void testHomePageTitle() throws Exception
+	public void testSignIn() throws Exception
 	{
-	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
+		loginPage.logIn();
 	}
-	
-	
 }

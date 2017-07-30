@@ -9,7 +9,7 @@
   <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter>
     <classes>
       <class name="com.selenium.common.BrowserDetails"/>
-      <class name="com.selenium.tests.ContactPageTest"/>
+      <class name="com.selenium.tests.OrderPageTest"/>
     </classes>
     </test>
 </suite> <!-- Suite -->

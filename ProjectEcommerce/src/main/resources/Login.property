@@ -1,0 +1,8 @@
+excel workbook location
+
+excelPath = ./src/main/resources/Ecommerce.xlsx
+
+
+User credential sheet name
+
+credentialSheet = UserCredentials

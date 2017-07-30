@@ -57,6 +57,6 @@ public void testsubjectddErrorMsg()
 @Test(priority = 2)
 public void testFileUpload()
 {
-	contactPage.verifyFileUpload();
+	Assert.assertTrue(contactPage.verifyFileUpload(), "File upload is not successful");
 }
 }
