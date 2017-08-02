@@ -26,5 +26,12 @@ public class HomePageTest extends BrowserDetails
 	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
 	}
 	
+//	@Test(priority = 1)
+//	public void testHomePageTitle() throws Exception
+//	{
+//	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
+//	}
+	
+	
 	
 }

@@ -12,6 +12,7 @@
     <classes>
       <class name="com.selenium.tests.OrderPageTest">
         <methods>
+          <include name="testSelectedPdctAndChkOut"/>
           <include name="logIn"/>
           <include name="baseSetUp"/>
           <include name="setUp"/>
