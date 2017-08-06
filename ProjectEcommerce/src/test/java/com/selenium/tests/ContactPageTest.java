@@ -3,6 +3,7 @@ package com.selenium.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -19,6 +20,7 @@ private ContactPage contactPage;
 @BeforeClass
 public void setUp()
 {
+	baseSetUp();
 	driver = getDriver();
 	homePage = new HomePage(driver);
 	contactPage = homePage.clickContactUs();
@@ -58,5 +60,11 @@ public void testsubjectddErrorMsg()
 public void testFileUpload()
 {
 	Assert.assertTrue(contactPage.verifyFileUpload(), "File upload is not successful");
+}
+
+@AfterClass
+public void closeBrowser()
+{
+	browserClose();
 }
 }

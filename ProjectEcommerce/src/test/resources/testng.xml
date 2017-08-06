@@ -5,12 +5,12 @@
 <listener class-name="com.selenium.common.Listeners"></listener>
 </listeners>
   <test name="chromeTest">
-  <parameter name="browserType" value="chrome"></parameter>
-  <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter>
+<!--   <parameter name="browserType" value="chrome"></parameter> -->
+<!--   <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter> -->
     <classes>
-      <class name="com.selenium.common.BrowserDetails"/>
-      <class name="com.selenium.tests.OrderPageTest"/>
+<!--       <class name="com.selenium.common.BrowserDetails"/> -->
+      <class name="com.selenium.tests.HomePageTest"/>
+      <class name="com.selenium.tests.MobilePageTest"/>
     </classes>
-    
     </test>
 </suite> <!-- Suite -->

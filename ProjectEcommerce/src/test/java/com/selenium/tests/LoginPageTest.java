@@ -2,6 +2,7 @@ package com.selenium.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,6 +19,7 @@ public class LoginPageTest extends BrowserDetails
 	@BeforeClass
 	public void setUp()
 	{
+		baseSetUp();
 		driver = getDriver();
 		homePage = new HomePage(driver);
 		loginPage = homePage.clickOnSignIn();
@@ -27,5 +29,11 @@ public class LoginPageTest extends BrowserDetails
 	public void testSignIn() throws Exception
 	{
 		loginPage.logIn();
+	}
+	
+	@AfterClass
+	public void closeBrowser()
+	{
+		browserClose();
 	}
 }

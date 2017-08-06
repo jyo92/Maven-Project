@@ -1,0 +1,33 @@
+Mobile page heading element
+mobHdr = //h1[text()='Mobile']
+
+Sort By Dropdown
+srtByDd = //select[@title='Sort By']
+
+product list
+prdctList = product-name
+
+SonyXperia cart button
+cartXp = //a[@title='Xperia']//following::div[1]//*[@title="Add to Cart"]
+
+compXp = //a[@title='Xperia']//following::div[1]//*[text()='Add to Compare']
+
+compIPhn = //a[@title='IPhone']//following::div[1]//*[text()='Add to Compare']
+
+compBtn = //button[@title="Compare"]
+
+XpText = Sony Xperia
+
+IPhnText = IPhone
+
+GalText = Samsung Galaxy
+
+cmpPgHdr = //h1[text()='Compare Products']
+
+cmpPrdct = //h2[@class='product-name']//a
+
+XpExpPrceElmt = //a[@title='Xperia']//following::div[1]//span[@class='price']
+
+XpElmt = //a[@title='Xperia']//following::div[1]//a[text()='Sony Xperia']
+
+XpActPrceElmt = //span[@class='price']

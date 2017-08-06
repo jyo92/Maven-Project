@@ -50,13 +50,13 @@ public class LoginPage
     	return authenticationHeadingElmt.getText().contains(expecAuthenticationHeading);
     }
     
-    public OrderPage logIn()
+    public CartPage logIn()
     {
     	enterUserName();
     	enterPwd();
     	submitBtnElmt = driver.findElement(submitBtn);
     	submitBtnElmt.click();
-    	return new OrderPage(driver);
+    	return new CartPage(driver);
     }
     
     public void enterUserName()

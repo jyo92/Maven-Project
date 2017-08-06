@@ -10,6 +10,7 @@ public class BrowserDetails
 {
 	private WebDriver driver;
 	private String driverPropertyFilePath = "./src/main/resources/DriverLocation.property";
+	private String browserPropertyFilePath = "./src/main/resources/BrowserDetails.property";
 	
 	public WebDriver getDriver()
 	{
@@ -66,19 +67,23 @@ public class BrowserDetails
 		
 	}
 	
-	
-	@Parameters({"browserType","appURL"})
-	@BeforeClass
-	public void baseSetUp(String browserType, String appURL)
+//	@Parameters({"browserType","appURL"})
+//	@BeforeClass
+	public void baseSetUp()
 	{
 		try
 		{
-			setDriver(browserType, appURL);
+			setDriver(ReadPropertyFile.propertyRead(browserPropertyFilePath, "Chrome"), ReadPropertyFile.propertyRead(browserPropertyFilePath, "URL"));
 		}
 		catch (Exception e) 
 		{
 			e.printStackTrace();
 		}
+	}
+	
+	public void browserClose()
+	{
+		driver.quit();
 	}
 
 }

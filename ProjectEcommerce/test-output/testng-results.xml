@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27009" started-at="2017-08-02T03:50:42Z" finished-at="2017-08-02T03:51:09Z">
+  <suite name="Default suite" duration-ms="14867" started-at="2017-08-06T07:31:20Z" finished-at="2017-08-06T07:31:35Z">
     <groups>
     </groups>
-    <test name="chromeTest" duration-ms="27009" started-at="2017-08-02T03:50:42Z" finished-at="2017-08-02T03:51:09Z">
-      <class name="com.selenium.tests.OrderPageTest">
-        <test-method status="PASS" signature="baseSetUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="baseSetUp" is-config="true" duration-ms="14735" started-at="2017-08-02T09:20:42Z" finished-at="2017-08-02T09:20:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://automationpractice.com/index.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- baseSetUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="setUp" is-config="true" duration-ms="37" started-at="2017-08-02T09:20:56Z" finished-at="2017-08-02T09:20:57Z">
+    <test name="Default test" duration-ms="14867" started-at="2017-08-06T07:31:20Z" finished-at="2017-08-06T07:31:35Z">
+      <class name="com.selenium.tests.MobilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.MobilePageTest@1e88b3c]" name="setUp" is-config="true" duration-ms="8252" started-at="2017-08-06T13:01:20Z" finished-at="2017-08-06T13:01:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSelectedPdctAndChkOut()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="testSelectedPdctAndChkOut" duration-ms="6834" started-at="2017-08-02T09:20:57Z" finished-at="2017-08-02T09:21:03Z">
+        <test-method status="PASS" signature="testXpPrice()[pri:0, instance:com.selenium.tests.MobilePageTest@1e88b3c]" name="testXpPrice" duration-ms="4908" started-at="2017-08-06T13:01:29Z" finished-at="2017-08-06T13:01:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSelectedPdctAndChkOut -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:com.selenium.tests.OrderPageTest@4667ae56]" name="logIn" duration-ms="5375" started-at="2017-08-02T09:21:03Z" finished-at="2017-08-02T09:21:09Z">
+        </test-method> <!-- testXpPrice -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.tests.MobilePageTest@1e88b3c]" name="closeBrowser" is-config="true" duration-ms="1663" started-at="2017-08-06T13:01:34Z" finished-at="2017-08-06T13:01:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn -->
-      </class> <!-- com.selenium.tests.OrderPageTest -->
-    </test> <!-- chromeTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.tests.MobilePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

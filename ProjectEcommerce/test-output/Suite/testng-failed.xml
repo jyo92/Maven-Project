@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="appURL" value="http://automationpractice.com/index.php"/>
-  <parameter name="browserType" value="chrome"/>
   <listeners>
     <listener class-name="com.selenium.common.Listeners"/>
   </listeners>
   <test name="chromeTest(failed)">
-    <parameter name="appURL" value="http://automationpractice.com/index.php"/>
-    <parameter name="browserType" value="chrome"/>
     <classes>
+      <class name="com.selenium.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.tests.HomePageTest -->
+      <class name="com.selenium.tests.ContactPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testFileUpload"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.tests.ContactPageTest -->
       <class name="com.selenium.tests.OrderPageTest">
         <methods>
-          <include name="testSelectedPdctAndChkOut"/>
-          <include name="logIn"/>
-          <include name="baseSetUp"/>
+          <include name="closeBrowser"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.selenium.tests.OrderPageTest -->
+      <class name="com.selenium.tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.tests.LoginPageTest -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

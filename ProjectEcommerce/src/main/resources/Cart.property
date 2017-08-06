@@ -1,0 +1,9 @@
+qtyBox = //input[@title='Qty']
+
+updateBtn = //*[text()='Update']
+
+qtyErrMsg = //li[@class='error-msg']//child::li//span
+
+emptyCrtLnk = empty_cart_button
+
+emptyCrtMsg = //h1[text()='Shopping Cart is Empty']

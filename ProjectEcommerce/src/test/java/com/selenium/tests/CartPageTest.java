@@ -7,14 +7,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
+import com.selenium.pages.CartPage;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.MobilePage;
 
-public class HomePageTest extends BrowserDetails
+public class CartPageTest extends BrowserDetails
 {
 	private WebDriver driver;
 	private HomePage homePage;
-	private MobilePage Mobpage;
+	private CartPage cartPage;
+	public MobilePage mobilePage;
 	
 	@BeforeClass
 	public void setUp()
@@ -25,16 +27,17 @@ public class HomePageTest extends BrowserDetails
 	}
 	
 	@Test(priority = 0)
-	public void testHomePgeTitle() throws Exception
+	public void testMaxQtyErrMsg()
 	{
-	    Assert.assertTrue(homePage.verifyHomePageTitle(), "Home page title does not match");
+		mobilePage = homePage.clickOnMobile();
+		cartPage = mobilePage.addToCart();
+		Assert.assertTrue(cartPage.verifyMaxQtyErrMsg(), "no qty error message came");
 	}
-	
+
 	@Test(priority = 1)
-	public void testMobPgeHdr()
+	public void testEmtyCrtErrMsg()
 	{
-		Mobpage = homePage.clickOnMobile();
-		Assert.assertTrue(Mobpage.verifyMobPgeHdr(), "Mobile page header is not matched");
+		Assert.assertTrue(cartPage.VerifyEmptyCrtErrMsg(), "no empty cart error message came");
 	}
 	
 	@AfterClass
@@ -42,4 +45,6 @@ public class HomePageTest extends BrowserDetails
 	{
 		browserClose();
 	}
+	
+	
 }

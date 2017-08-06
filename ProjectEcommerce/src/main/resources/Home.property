@@ -1,0 +1,5 @@
+
+title = //div[@class='page-title']//following::h2
+
+Mobile option
+mobile = //a[text()='Mobile']
