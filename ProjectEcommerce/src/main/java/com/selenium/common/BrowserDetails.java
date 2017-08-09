@@ -50,6 +50,7 @@ public class BrowserDetails
 	private WebDriver initFirefoxDriver(String URL)
 	{
 		System.out.println("Initializing firefox browser");
+		System.setProperty("webdriver.gecko.driver",ReadPropertyFile.propertyRead(driverPropertyFilePath,"gechoPath"));
 		driver = new FirefoxDriver();
 		driver.get(URL);
 		driver.manage().window().maximize();

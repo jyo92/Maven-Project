@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 
 import com.selenium.common.ReadPropertyFile;
 
@@ -64,7 +65,7 @@ public class CartPage
     	return maxQtyErrVisible;
     }
     
-    public boolean VerifyEmptyCrtErrMsg()
+    public boolean VerifyEmptyCrtMsg()
     {
     	WebElement emptyCrtLink = driver.findElement(By.id(ReadPropertyFile.propertyRead(cartPrptyPath, "emptyCrtLnk")));
     	emptyCrtLink.click();

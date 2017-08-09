@@ -4,12 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.MobilePage;
 
+@Listeners(com.selenium.common.Listeners.class)
 public class HomePageTest extends BrowserDetails
 {
 	private WebDriver driver;

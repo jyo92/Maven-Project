@@ -2,7 +2,8 @@
 Chrome driver location
 chromePath=./Drivers/ChromeDriver/chromedriver.exe
 
-
+Gecho driver location
+gechoPath=./Drivers/GechoDriver/geckodriver.exe
 
 IE driver location
 iePath=./Drivers/IEDriver/IEDriverServer.exe

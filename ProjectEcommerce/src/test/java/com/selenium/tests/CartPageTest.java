@@ -4,13 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
 import com.selenium.pages.CartPage;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.MobilePage;
-
+@Listeners(com.selenium.common.Listeners.class)
 public class CartPageTest extends BrowserDetails
 {
 	private WebDriver driver;
@@ -35,9 +36,9 @@ public class CartPageTest extends BrowserDetails
 	}
 
 	@Test(priority = 1)
-	public void testEmtyCrtErrMsg()
+	public void testEmtyCartMsg()
 	{
-		Assert.assertTrue(cartPage.VerifyEmptyCrtErrMsg(), "no empty cart error message came");
+		Assert.assertTrue(cartPage.VerifyEmptyCrtMsg(), "no empty cart error message came");
 	}
 	
 	@AfterClass

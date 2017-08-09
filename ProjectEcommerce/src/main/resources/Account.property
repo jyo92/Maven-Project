@@ -1,0 +1,29 @@
+Enter Email in TextBox
+
+email = abcz@email.com
+
+Enter text in Message Box
+
+message = abcd
+
+tvLink = //a[text()='TV']
+
+logInDashBrd = //h1[text()='My Dashboard']
+
+wishLG = //a[@title='LG LCD']//following::div[1]//*[text()='Add to Wishlist']
+
+shreWshBtn = .btn-share
+
+emailBox = #email_address
+
+msgBox = #message
+
+shareBtn = //button[@title='Share Wishlist']
+
+succMsg = //li[@class='success-msg']//span
+
+wishLink = //*[@class='current']//*[text()='My Wishlist']
+
+addCartBtn = //*[text()='Add to Cart']
+
+checkout = //*[@title='Proceed to Checkout']

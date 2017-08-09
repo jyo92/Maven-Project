@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.tests.MobilePageTest">
+      <class name="com.selenium.tests.MyAccountPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="testCompPgeHdr"/>
+          <include name="testSuccOrderPlacing"/>
         </methods>
-      </class> <!-- com.selenium.tests.MobilePageTest -->
+      </class> <!-- com.selenium.tests.MyAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

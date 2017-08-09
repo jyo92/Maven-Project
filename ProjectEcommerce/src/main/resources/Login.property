@@ -1,8 +1,32 @@
 excel workbook location
 
-excelPath = ./src/main/resources/Ecommerce.xlsx
+excelPath = ./src/main/resources/testData.xlsx
 
 
 User credential sheet name
 
 credentialSheet = UserCredentials
+
+emilTxtBox = email
+
+pwdTxtBox = pass
+
+logInBtn = //*[text()='Login']
+
+crateAnAcct = //a[@class='button'][@title='Create an Account']
+
+fName = firstname
+
+lName = lastname
+
+email = email_address
+
+pwd = password
+
+rePwd = confirmation
+
+register = //button[@title='Register']
+
+successMsg = //li[@class='success-msg']
+
+loginErrMsg = //*[text()='This is a required field.']

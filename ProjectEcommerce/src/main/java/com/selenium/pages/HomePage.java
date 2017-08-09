@@ -1,10 +1,5 @@
 package com.selenium.pages;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,10 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.selenium.common.RandomNumber;
 import com.selenium.common.ReadPropertyFile;
 
 public class HomePage 
@@ -56,6 +49,15 @@ public class HomePage
 	{
 		driver.findElement(By.xpath(ReadPropertyFile.propertyRead(homePrptyPath, "mobile"))).click();
 		return new MobilePage(driver);
+	}
+	
+	public LoginPage clickMyAccount()
+	{
+		WebElement accLink = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(homePrptyPath, "accountLink")));
+		accLink.click();
+		WebElement myAccLink = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(homePrptyPath, "myAccount")));
+		myAccLink.click();
+		return new LoginPage(driver);
 	}
 		
 }

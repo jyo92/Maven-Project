@@ -6,7 +6,9 @@ import org.apache.xerces.util.SynchronizedSymbolTable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 
 import com.selenium.common.ReadExcel;
 import com.selenium.common.ReadPropertyFile;
@@ -15,21 +17,7 @@ public class LoginPage
 {
 	public WebDriver driver;
     public WebDriverWait wait;
-    
-    private By emailTxtBox = By.id("email");
-    private WebElement emailTxtBoxElmt;
-    
-    private By pwdTxtBox = By.id("passwd");
-    private WebElement pwdTxtBoxElmt;
-    
-    private By submitBtn =  By.id("SubmitLogin");
-    private WebElement submitBtnElmt;
-    
-    private By authenticationHeading = By.xpath(".//*[text()='Authentication']");
-    private WebElement authenticationHeadingElmt;
-    private boolean authenticationHeadingResult;
-    
-    private String expecAuthenticationHeading = "Authentication";
+    public boolean loginRslt = false;
     
     private String loginPrtyFilePath = "./src/main/resources/Login.property";
     
@@ -37,37 +25,69 @@ public class LoginPage
     {
     	this.driver = driver;
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	wait = new WebDriverWait(driver, 10);
     }
     
-    public boolean loginPageHeading()
-    {
-    	authenticationHeadingElmt = driver.findElement(authenticationHeading);
-    	return authenticationHeadingElmt.isDisplayed();
-    }
-    
-    public boolean verifyLoginPageHeading()
-    {
-    	return authenticationHeadingElmt.getText().contains(expecAuthenticationHeading);
-    }
-    
-    public CartPage logIn()
+    public MyAccountPage logIn()
     {
     	enterUserName();
     	enterPwd();
-    	submitBtnElmt = driver.findElement(submitBtn);
-    	submitBtnElmt.click();
-    	return new CartPage(driver);
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(loginPrtyFilePath, "logInBtn"))).click();
+    	return new MyAccountPage(driver);
     }
     
     public void enterUserName()
     {
-    	emailTxtBoxElmt = driver.findElement(emailTxtBox);
+    	WebElement emailTxtBoxElmt = driver.findElement(By.id(ReadPropertyFile.propertyRead(loginPrtyFilePath, "emilTxtBox")));
     	emailTxtBoxElmt.sendKeys(ReadExcel.excelReading(ReadPropertyFile.propertyRead(loginPrtyFilePath, "excelPath" ), ReadPropertyFile.propertyRead(loginPrtyFilePath, "credentialSheet" ) , 1, 0));
     }
     
     public void enterPwd()
     {
-    	pwdTxtBoxElmt = driver.findElement(pwdTxtBox);
+    	WebElement pwdTxtBoxElmt = driver.findElement(By.id(ReadPropertyFile.propertyRead(loginPrtyFilePath, "pwdTxtBox")));
     	pwdTxtBoxElmt.sendKeys(ReadExcel.excelReading(ReadPropertyFile.propertyRead(loginPrtyFilePath, "excelPath" ), ReadPropertyFile.propertyRead(loginPrtyFilePath, "credentialSheet" ) , 1, 1));
     }
+    
+    public boolean onlyUserNameLogin()
+    {
+    	enterUserName();
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(loginPrtyFilePath, "logInBtn"))).click();
+    	try
+    	{
+    		WebElement LoginErrMsgElmt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(loginPrtyFilePath, "loginErrMsg"))));
+    		if(LoginErrMsgElmt.isDisplayed())
+    		{
+    			loginRslt = true;
+    			System.out.println("Error message came");
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    		System.out.println("no Error message");
+    	}
+    	return loginRslt;
+    }
+    
+    public boolean onlyPwdLogin()
+    {
+    	enterPwd();
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(loginPrtyFilePath, "logInBtn"))).click();
+    	try
+    	{
+    		WebElement LoginErrMsgElmt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(loginPrtyFilePath, "loginErrMsg"))));
+    		if(LoginErrMsgElmt.isDisplayed())
+    		{
+    			loginRslt = true;
+    			System.out.println("Error message came");
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    		System.out.println("no Error message");
+    	}
+    	return loginRslt;
+    }
+    
 }
