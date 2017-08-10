@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import com.selenium.common.ReadPropertyFile;
+import com.selenium.common.WriteExcel;
 
 public class MobilePage 
 {
@@ -106,15 +107,16 @@ public List<String> getSortedListAsc(List<String> list)
 
 public boolean compareTwoMobLists()
 {
-	boolean sortedResult;
+	boolean sortedResult = false;
 	getExpSrtedList().removeAll(getActuSrtedList());
 	if(expSortdMobList.isEmpty())
 	{
 		sortedResult = true;
+		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),4,2, "pass");
 	}
 	else
 	{
-		sortedResult = false;
+		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),4,2, "fail");
 	}
 	return sortedResult;
 }
@@ -177,17 +179,18 @@ public boolean verifyCompPgeHdr()
 
 public boolean compSetsOfMobile()
 {
-	boolean compResult;
+	boolean compResult = false;
 	Set<String> expSet = getAddToCompExpSet();
 	Set<String> actSet = getAddToCompActSet();
 	expSet.removeAll(actSet);
 	if(expSet.isEmpty())
 	{
 		compResult = true;
+		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),6,2, "pass");
 	}
 	else
 	{
-		compResult = false;
+		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),6,2, "fail");
 	}
 	return compResult;
 }

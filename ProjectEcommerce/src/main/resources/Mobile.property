@@ -1,3 +1,11 @@
+excel workbook location
+
+excelPath = ./src/main/resources/testData.xlsx
+
+User credential sheet name
+
+mobileSheet = MobilePgeTCs
+
 Mobile page heading element
 mobHdr = //h1[text()='Mobile']
 
