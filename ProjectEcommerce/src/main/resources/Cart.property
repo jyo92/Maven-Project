@@ -7,3 +7,15 @@ qtyErrMsg = //li[@class='error-msg']//child::li//span
 emptyCrtLnk = empty_cart_button
 
 emptyCrtMsg = //h1[text()='Shopping Cart is Empty']
+
+pdctName = //*[@class='product-cart-info']//h2[@class='product-name']
+
+removeElmt = //*[@class='product-cart-total']//following::td[1]//*[@title="Remove Item"]
+
+contShopp = //*[@title='Continue Shopping']
+
+couTxtBox = coupon_code
+
+applyLink = //button[@value='Apply']
+
+succCoupMsg = //li[@class='success-msg']

@@ -7,3 +7,15 @@ mobile = //a[text()='Mobile']
 accountLink = //span[text()='Account']
 
 myAccount = //a[text()='My Account']
+
+cart = //span[text()='Cart']
+
+emptyMsg = //p[@class='empty']
+
+close = //a[@title='Close']
+
+removeLink = //*[@class='remove']
+
+removeSuccMsg = minicart-success-message
+
+acctOpt = //div[@id='header-account']//ul//child::li

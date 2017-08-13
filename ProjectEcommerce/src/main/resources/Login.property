@@ -2,7 +2,6 @@ excel workbook location
 
 excelPath = ./src/main/resources/testData.xlsx
 
-
 User credential sheet name
 
 credentialSheet = UserCredentials
@@ -30,3 +29,5 @@ register = //button[@title='Register']
 successMsg = //li[@class='success-msg']
 
 loginErrMsg = //*[text()='This is a required field.']
+
+succRegMsg = //*[text()='Thank you for registering with Main Website Store.']

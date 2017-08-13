@@ -8,9 +8,15 @@ message = abcd
 
 tvLink = //a[text()='TV']
 
+mobLink = //a[text()='Mobile']
+
 logInDashBrd = //h1[text()='My Dashboard']
 
+wishLstEtyMsg = //p[@class='wishlist-empty']
+
 wishLG = //a[@title='LG LCD']//following::div[1]//*[text()='Add to Wishlist']
+
+wishIph = //a[@title='IPhone']//following::div[1]//*[text()='Add to Wishlist'] 
 
 shreWshBtn = .btn-share
 
@@ -22,8 +28,50 @@ shareBtn = //button[@title='Share Wishlist']
 
 succMsg = //li[@class='success-msg']//span
 
-wishLink = //*[@class='current']//*[text()='My Wishlist']
+wishLink = //*[text()='My Product Reviews']//following::li[1]//*[text()='My Wishlist']
 
-addCartBtn = //*[text()='Add to Cart']
+addCartBtn = //div[@class='cart-cell']//*[text()='Add to Cart']
+
+estimateLnk = //button[@title='Estimate']
 
 checkout = //*[@title='Proceed to Checkout']
+
+regIDdd = region_id
+
+postCode = postcode
+
+ny = New York
+
+priceList = //button[@title='Update Total']//following::div[1]//span[@class='price']
+
+qtyBox = //input[@title='Qty']
+
+updateBtn = //*[text()='Update']
+
+price = //td[@class='product-cart-price']//*[@class='price']
+
+totalPrice = //td[@class='product-cart-total']//*[@class='price']
+
+continueBtn = //*[text()='Continue']
+
+shipgMtdCont = //*[@id = 'shipping-method-buttons-container']//*[text()='Continue']
+
+payInfoCont = //*[@id = 'payment-buttons-container']//*[text()='Continue']
+
+monyOdrRadio = p_method_checkmo
+
+plceOrdBtn = //*[@title ='Place Order']
+
+succOdrMsg = //*[@class='page-title']//h1
+
+chgPwd = //*[text()='Change Password']
+
+currPwd = current_password
+
+nwPwd = password
+
+confNewPwd = confirmation
+
+saveBtn = //button[@title='Save'] 
+
+chgPwdSuccMsg = //*[text()='The account information has been saved.']

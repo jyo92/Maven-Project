@@ -1,6 +1,5 @@
 package com.selenium.tests;
 
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -15,10 +14,10 @@ import com.selenium.pages.LoginPage;
 @Listeners(com.selenium.common.Listeners.class)
 public class MyAccountPageTest extends BrowserDetails 
 {
-private WebDriver driver;
-private HomePage homePage;
-private LoginPage loginPage;
-private MyAccountPage myAccPage;
+public WebDriver driver;
+public HomePage homePage;
+public LoginPage loginPage;
+public MyAccountPage myAccPage;
 
 @BeforeClass
 public void setUp()
@@ -28,26 +27,41 @@ public void setUp()
 	homePage = new HomePage(driver);
 }
 
-//@Test(priority = 0)
-//public void testWshListShre()
-//{
-//	loginPage = homePage.clickMyAccount();
-//	myAccPage = loginPage.logIn();
-//	Assert.assertTrue(myAccPage.addToWishList(),"wish list is not share successfully") ;
-//}
-
-@Test(priority = 1)
-public void testSuccOrderPlacing()
+@Test(priority = 0)
+public void testWshListShre()
 {
 	loginPage = homePage.clickMyAccount();
 	myAccPage = loginPage.logIn();
-	myAccPage.verifyOrderPlacing();
-	
+	Assert.assertTrue(myAccPage.addToWishList(),"wish list is not share successfully") ;
 }
 
-//@AfterClass
-//public void closeBrowser()
-//{
-//	browserClose();
-//}
+@Test(priority = 1)
+public void testItemTotalPrice()
+{
+	loginPage = homePage.clickMyAccount();
+	myAccPage = loginPage.logIn();
+	Assert.assertTrue(myAccPage.chkQtyAndPrice(),"total price is not correct");
+}
+
+@Test(priority = 2)
+public void testSuccOrderGen() throws Exception
+{
+	loginPage = homePage.clickMyAccount();
+	myAccPage = loginPage.logIn();
+	Assert.assertTrue(myAccPage.vfySuccOrderGen(),"order is not placed successfully");
+}
+
+@Test()
+public void testChangePwd()
+{
+	loginPage = homePage.clickMyAccount();
+	myAccPage = loginPage.logIn();
+	Assert.assertTrue(myAccPage.changePwd());
+}
+
+@AfterClass
+public void closeBrowser()
+{
+	browserClose();
+}
 }

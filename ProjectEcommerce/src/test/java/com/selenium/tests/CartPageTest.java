@@ -41,6 +41,30 @@ public class CartPageTest extends BrowserDetails
 		Assert.assertTrue(cartPage.VerifyEmptyCrtMsg(), "no empty cart error message came");
 	}
 	
+	@Test(priority = 2)
+	public void testItemRemoveFrmCart()
+	{
+		mobilePage = homePage.clickOnMobile();
+		cartPage = mobilePage.addToCart();
+		Assert.assertTrue(cartPage.RemoveFrmCart());
+	}
+	
+	@Test(priority = 3)
+	public void testContinueShopp()
+	{
+		mobilePage = homePage.clickOnMobile();
+		cartPage = mobilePage.addToCart();
+		Assert.assertTrue(cartPage.verifyContShopp());
+	}
+	
+	@Test(priority = 4)
+	public void testSuccCoupMsg()
+	{
+		mobilePage = homePage.clickOnMobile();
+		cartPage = mobilePage.addToCart();
+		Assert.assertTrue(cartPage.verifySuccCoupMsg());
+	}
+	
 	@AfterClass
 	public void closeBrowser()
 	{

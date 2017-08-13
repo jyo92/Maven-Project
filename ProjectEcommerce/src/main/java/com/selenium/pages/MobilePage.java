@@ -202,4 +202,11 @@ public boolean verifyXperiaPrice()
 	return expPrice.equals(actPrice);
 }
 
+public boolean backToHomePage() throws Exception
+{
+	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(MobPrtyLoc, "logo"))).click();
+	Thread.sleep(3000);
+	return (driver.getTitle().equals("Home page"));
+}
+
 }

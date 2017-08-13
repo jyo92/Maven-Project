@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24823" started-at="2017-08-10T04:38:32Z" finished-at="2017-08-10T04:38:57Z">
+  <suite name="Default suite" duration-ms="24345" started-at="2017-08-13T19:06:45Z" finished-at="2017-08-13T19:07:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24823" started-at="2017-08-10T04:38:32Z" finished-at="2017-08-10T04:38:57Z">
-      <class name="com.selenium.tests.MobilePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.MobilePageTest@27efef64]" name="setUp" is-config="true" duration-ms="9483" started-at="2017-08-10T10:08:32Z" finished-at="2017-08-10T10:08:42Z">
+    <test name="Default test" duration-ms="24345" started-at="2017-08-13T19:06:45Z" finished-at="2017-08-13T19:07:09Z">
+      <class name="com.selenium.tests.MyAccountPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="setUp" is-config="true" duration-ms="9955" started-at="2017-08-14T00:36:45Z" finished-at="2017-08-14T00:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSortByName()[pri:0, instance:com.selenium.tests.MobilePageTest@27efef64]" name="testSortByName" duration-ms="5987" started-at="2017-08-10T10:08:42Z" finished-at="2017-08-10T10:08:48Z">
+        <test-method status="PASS" signature="testChangePwd()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="testChangePwd" duration-ms="11761" started-at="2017-08-14T00:36:54Z" finished-at="2017-08-14T00:37:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSortByName -->
-        <test-method status="PASS" signature="testAddToCompItms()[pri:0, instance:com.selenium.tests.MobilePageTest@27efef64]" name="testAddToCompItms" duration-ms="7401" started-at="2017-08-10T10:08:48Z" finished-at="2017-08-10T10:08:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddToCompItms -->
-        <test-method status="PASS" signature="testCompPgeHdr()[pri:0, instance:com.selenium.tests.MobilePageTest@27efef64]" name="testCompPgeHdr" duration-ms="16" started-at="2017-08-10T10:08:55Z" finished-at="2017-08-10T10:08:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompPgeHdr -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.tests.MobilePageTest@27efef64]" name="closeBrowser" is-config="true" duration-ms="1890" started-at="2017-08-10T10:08:55Z" finished-at="2017-08-10T10:08:57Z">
+        </test-method> <!-- testChangePwd -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="closeBrowser" is-config="true" duration-ms="2603" started-at="2017-08-14T00:37:06Z" finished-at="2017-08-14T00:37:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.selenium.tests.MobilePageTest -->
+      </class> <!-- com.selenium.tests.MyAccountPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

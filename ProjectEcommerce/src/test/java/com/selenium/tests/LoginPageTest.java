@@ -42,7 +42,7 @@ public class LoginPageTest extends BrowserDetails
 		Assert.assertTrue(loginPage.onlyPwdLogin(), "no error message");
 	}
 	
-	@Test(priority = 0)
+	@Test(enabled = false)
 	public void testLogIn()
 	{
 		loginPage = homePage.clickMyAccount();
@@ -50,4 +50,10 @@ public class LoginPageTest extends BrowserDetails
 		Assert.assertTrue(myAccPage.verifyAcctDbdMsg(), "login failed");
 	}
 
+	@Test
+	public void testNewLogIn()
+	{
+		loginPage = homePage.clickMyAccount();
+		Assert.assertTrue(loginPage.createNewAccount());
+	}
 }

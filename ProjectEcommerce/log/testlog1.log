@@ -1,1 +1,273 @@
 2017-08-09 00:51:35,946 [main] INFO com.selenium.pages.MyAccountPage - TV clicked........
+2017-08-11 08:43:02,340 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 08:43:03,128 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 08:45:36,352 [main] INFO com.selenium.pages.MyAccountPage - TV clicked........
+2017-08-11 08:46:23,400 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 08:46:25,671 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 08:46:28,002 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-11 08:55:58,716 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 08:55:59,032 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:13:06,843 [main] INFO com.selenium.pages.MyAccountPage - TV clicked........
+2017-08-11 09:14:00,498 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:14:02,862 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:14:05,185 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-11 09:17:21,992 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:17:24,949 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:17:25,272 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-11 09:29:15,668 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:29:16,008 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:30:40,331 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:30:42,449 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:30:42,869 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-11 09:30:43,446 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-11 09:30:46,318 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-11 09:53:28,423 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:53:30,579 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:53:30,953 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-11 09:53:31,285 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-11 09:53:32,839 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-11 09:53:35,202 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-11 09:59:27,427 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-11 09:59:29,493 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-11 09:59:29,867 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-11 09:59:30,207 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-11 09:59:31,847 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 09:54:56,317 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 09:54:58,535 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 09:54:59,037 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 09:54:59,530 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 09:55:02,534 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 10:56:33,739 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 10:56:34,056 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 11:03:28,805 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 11:03:31,039 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 11:03:31,424 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 11:03:31,762 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 11:03:33,413 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 11:04:16,324 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 11:09:06,383 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 11:09:08,421 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 11:09:08,838 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 11:09:09,170 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 11:09:10,725 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 11:11:48,978 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 11:11:51,985 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 11:11:52,402 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 11:11:52,752 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 11:11:54,321 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 11:55:49,608 [main] INFO com.selenium.pages.MyAccountPage - Mobile Link clicked........
+2017-08-12 11:55:51,394 [main] INFO com.selenium.pages.MyAccountPage - Add to wishlist clicked
+2017-08-12 11:59:44,498 [main] INFO com.selenium.pages.MyAccountPage - Mobile Link clicked........
+2017-08-12 11:59:46,259 [main] INFO com.selenium.pages.MyAccountPage - Add to wishlist clicked
+2017-08-12 11:59:47,712 [main] INFO com.selenium.pages.MyAccountPage - share btn clicked
+2017-08-12 11:59:48,087 [main] INFO com.selenium.pages.MyAccountPage - email typed
+2017-08-12 11:59:48,373 [main] INFO com.selenium.pages.MyAccountPage - message typed
+2017-08-12 12:34:18,836 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 12:50:11,736 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 12:52:34,368 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 12:53:45,960 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 12:53:58,802 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 13:40:48,566 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 13:41:01,510 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 13:46:33,899 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 13:46:47,567 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 13:49:08,468 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 13:52:19,883 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 13:52:32,729 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 14:34:23,481 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 14:34:36,114 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 14:34:36,511 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 14:34:36,882 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 14:34:38,849 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 14:34:41,076 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 14:34:41,368 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 14:34:41,498 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 14:46:33,908 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 14:46:56,973 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 14:46:57,377 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 14:46:57,698 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 14:46:59,308 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 14:47:01,647 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 14:47:01,952 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 14:58:27,740 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 14:58:40,588 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 14:58:40,966 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 14:58:41,296 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 14:58:42,918 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 14:58:45,467 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 14:58:45,770 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 15:04:15,001 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 15:04:28,381 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 15:04:28,754 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 15:04:29,094 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 15:04:30,838 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 15:04:33,973 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 15:04:34,316 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 15:07:19,649 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 15:07:32,456 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 15:07:32,830 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 15:07:33,190 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 15:07:34,815 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 15:07:37,009 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 15:07:37,307 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 15:07:39,559 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 15:09:18,645 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 15:09:31,312 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 15:09:31,684 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 15:09:32,023 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 15:09:33,683 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 15:09:36,018 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 15:09:36,339 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 15:09:38,603 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 15:09:45,174 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 15:09:47,447 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 16:29:00,919 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 16:29:13,339 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 16:29:13,760 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 16:29:14,111 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 16:29:15,737 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 16:29:18,174 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 16:29:18,572 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 16:29:20,228 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 16:29:21,570 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 16:29:22,486 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 16:49:47,562 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 16:50:01,571 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 16:50:01,953 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 16:50:02,278 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 16:50:03,844 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 16:50:06,158 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 16:50:06,535 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 16:50:08,007 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 16:50:09,182 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 16:50:10,130 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 16:55:29,389 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 16:55:41,729 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 16:55:42,181 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 16:55:42,533 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 16:55:44,147 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 16:55:46,381 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 16:55:46,780 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 16:55:48,300 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 16:55:49,451 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 16:55:50,352 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 16:58:58,837 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 16:59:11,564 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 16:59:11,939 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 16:59:12,284 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 16:59:13,931 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 16:59:16,337 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 16:59:16,697 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 16:59:18,228 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 16:59:19,370 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 16:59:20,183 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 17:00:18,873 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 17:00:31,310 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 17:00:31,685 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 17:00:32,021 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 17:00:33,650 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 17:00:35,917 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 17:00:36,267 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 17:00:37,710 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 17:00:38,924 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 17:00:39,789 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 17:03:16,156 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 17:03:29,051 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 17:03:29,426 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 17:03:29,766 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 17:03:31,441 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 17:03:34,082 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 17:03:34,495 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 17:03:36,006 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 17:03:37,249 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 17:03:38,111 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 17:04:32,384 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 17:04:44,762 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 17:04:45,133 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 17:04:45,461 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 17:04:47,134 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 17:04:49,433 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 17:04:49,768 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 17:04:51,225 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 17:04:52,523 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 17:04:53,689 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 17:06:36,504 [main] INFO com.selenium.pages.MyAccountPage - my wishlist link clicked
+2017-08-12 17:06:48,807 [main] INFO com.selenium.pages.MyAccountPage - Add to cart button clicked
+2017-08-12 17:06:49,190 [main] INFO com.selenium.pages.MyAccountPage - state dd selected
+2017-08-12 17:06:49,529 [main] INFO com.selenium.pages.MyAccountPage - postal code given
+2017-08-12 17:06:51,192 [main] INFO com.selenium.pages.MyAccountPage - estimate link clicked
+2017-08-12 17:06:53,436 [main] INFO com.selenium.pages.MyAccountPage - proceed to checkout clicked
+2017-08-12 17:06:53,806 [main] INFO com.selenium.pages.MyAccountPage - shipping address is confirmed
+2017-08-12 17:06:55,269 [main] INFO com.selenium.pages.MyAccountPage - shipping method is selected
+2017-08-12 17:06:56,418 [main] INFO com.selenium.pages.MyAccountPage - payment information is given
+2017-08-12 17:06:57,588 [main] INFO com.selenium.pages.MyAccountPage - place order clicked
+2017-08-12 23:01:22,269 [main] INFO com.selenium.pages.HomePage - click on empty cart
+2017-08-12 23:01:22,955 [main] INFO com.selenium.pages.HomePage - close empty cart msg
+2017-08-12 23:03:17,367 [main] INFO com.selenium.pages.HomePage - click on empty cart
+2017-08-12 23:03:18,026 [main] INFO com.selenium.pages.HomePage - close empty cart msg
+2017-08-13 00:06:24,682 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:11:30,989 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:11:32,947 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 00:14:15,046 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:15:52,453 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:15:54,641 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 00:17:27,724 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:17:29,620 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 00:21:24,354 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:23:19,213 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:25:29,602 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:26:16,299 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:28:53,044 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:30:27,565 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:30:30,679 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 00:32:21,699 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:32:23,650 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 00:35:08,153 [main] INFO com.selenium.pages.HomePage - click on cart
+2017-08-13 00:35:11,179 [main] INFO com.selenium.pages.HomePage - Remove successful msg came
+2017-08-13 12:01:05,470 [main] INFO com.selenium.pages.HomePage - Account link clicked
+2017-08-13 12:01:05,679 [main] INFO com.selenium.pages.HomePage - Account related items displayed
+2017-08-13 12:02:40,854 [main] INFO com.selenium.pages.HomePage - Account link clicked
+2017-08-13 12:02:40,968 [main] INFO com.selenium.pages.HomePage - Account related items displayed
+2017-08-13 12:09:37,812 [main] INFO com.selenium.pages.HomePage - Account link clicked
+2017-08-13 12:09:37,915 [main] INFO com.selenium.pages.HomePage - Account related items displayed
+2017-08-13 12:11:32,487 [main] INFO com.selenium.pages.HomePage - Account link clicked
+2017-08-13 12:11:32,592 [main] INFO com.selenium.pages.HomePage - Account related items displayed
+2017-08-13 12:18:45,853 [main] INFO com.selenium.pages.HomePage - Account link clicked
+2017-08-13 12:18:45,979 [main] INFO com.selenium.pages.HomePage - Account related items displayed
+2017-08-13 15:07:54,995 [main] INFO com.selenium.pages.CartPage - remove Elmt clicked
+2017-08-13 15:14:00,342 [main] INFO com.selenium.pages.CartPage - remove Elmt clicked
+2017-08-13 15:20:38,702 [main] INFO com.selenium.pages.CartPage - remove Elmt clicked
+2017-08-13 19:42:41,935 [main] INFO com.selenium.pages.CartPage - remove Elmt clicked
+2017-08-13 19:43:28,350 [main] INFO com.selenium.pages.CartPage - remove Elmt clicked
+2017-08-13 20:40:52,785 [main] INFO com.selenium.pages.CartPage - code given in txt box
+2017-08-13 20:40:54,779 [main] INFO com.selenium.pages.CartPage - apply link clicked
+2017-08-13 20:41:41,395 [main] INFO com.selenium.pages.CartPage - code given in txt box
+2017-08-13 20:41:43,072 [main] INFO com.selenium.pages.CartPage - apply link clicked
+2017-08-13 20:58:23,204 [main] INFO com.selenium.pages.CartPage - code given in txt box
+2017-08-13 20:58:24,854 [main] INFO com.selenium.pages.CartPage - apply link clicked
+2017-08-13 20:58:25,124 [main] INFO com.selenium.pages.CartPage - discount msg came
+2017-08-13 21:00:07,590 [main] INFO com.selenium.pages.CartPage - code given in txt box
+2017-08-13 21:00:09,386 [main] INFO com.selenium.pages.CartPage - apply link clicked
+2017-08-13 21:00:09,663 [main] INFO com.selenium.pages.CartPage - discount msg came
+2017-08-13 22:57:07,149 [main] INFO com.selenium.pages.LoginPage - create account button clicked
+2017-08-13 22:57:11,857 [main] INFO com.selenium.pages.LoginPage - fname given
+2017-08-13 22:57:12,267 [main] INFO com.selenium.pages.LoginPage - lname given
+2017-08-13 22:57:12,867 [main] INFO com.selenium.pages.LoginPage - email given
+2017-08-13 22:57:13,332 [main] INFO com.selenium.pages.LoginPage - pwd given
+2017-08-13 22:57:13,745 [main] INFO com.selenium.pages.LoginPage - pwd given again
+2017-08-13 22:59:59,212 [main] INFO com.selenium.pages.LoginPage - create account button clicked
+2017-08-13 23:00:01,357 [main] INFO com.selenium.pages.LoginPage - fname given
+2017-08-13 23:00:01,629 [main] INFO com.selenium.pages.LoginPage - lname given
+2017-08-13 23:00:01,941 [main] INFO com.selenium.pages.LoginPage - email given
+2017-08-13 23:00:02,203 [main] INFO com.selenium.pages.LoginPage - pwd given
+2017-08-13 23:00:02,447 [main] INFO com.selenium.pages.LoginPage - pwd given again
+2017-08-13 23:00:04,504 [main] INFO com.selenium.pages.LoginPage - register button clicked
+2017-08-13 23:00:04,870 [main] INFO com.selenium.pages.LoginPage - reg success msg came
+2017-08-14 00:31:37,632 [main] INFO com.selenium.pages.MyAccountPage - change pwd link clicked
+2017-08-14 00:31:42,787 [main] INFO com.selenium.pages.MyAccountPage - current pwd given
+2017-08-14 00:37:03,290 [main] INFO com.selenium.pages.MyAccountPage - change pwd link clicked
+2017-08-14 00:37:03,958 [main] INFO com.selenium.pages.MyAccountPage - current pwd given
+2017-08-14 00:37:04,465 [main] INFO com.selenium.pages.MyAccountPage - new pwd given
+2017-08-14 00:37:04,854 [main] INFO com.selenium.pages.MyAccountPage - new pwd given again
+2017-08-14 00:37:06,463 [main] INFO com.selenium.pages.MyAccountPage - save btn clicked
+2017-08-14 00:37:06,741 [main] INFO com.selenium.pages.MyAccountPage - pwd change success msg came

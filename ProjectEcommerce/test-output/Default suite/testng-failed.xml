@@ -5,8 +5,9 @@
     <classes>
       <class name="com.selenium.tests.MyAccountPageTest">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="testChangePwd"/>
           <include name="setUp"/>
-          <include name="testSuccOrderPlacing"/>
         </methods>
       </class> <!-- com.selenium.tests.MyAccountPageTest -->
     </classes>

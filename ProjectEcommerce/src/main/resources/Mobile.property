@@ -39,3 +39,5 @@ XpExpPrceElmt = //a[@title='Xperia']//following::div[1]//span[@class='price']
 XpElmt = //a[@title='Xperia']//following::div[1]//a[text()='Sony Xperia']
 
 XpActPrceElmt = //span[@class='price']
+
+logo = //*[@class='logo']

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class CartPage
 {
 	public WebDriver driver;
 	public JavascriptExecutor jse;
+	public Logger log;
 	
     public WebDriverWait wait;
     public WebElement actuQtyErrMsgElmt;
@@ -35,12 +37,14 @@ public class CartPage
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 10);
 		jse = (JavascriptExecutor)driver;
+		log = Logger.getLogger(CartPage.class);
 	}
 	
     public void genMaxQtyErrMsg()
 	{
 	   WebElement qtyBox = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "qtyBox")));
-	   qtyBox.sendKeys("000");
+	   qtyBox.clear();
+	   qtyBox.sendKeys("1000");
 	   try
 	   {
 	   updateBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "updateBtn"))));
@@ -82,5 +86,71 @@ public class CartPage
     		System.out.println("Empty cart error message has not come");
     	}
     	return emtyCrtMsgVisible;
+    }
+    
+    public boolean RemoveFrmCart()
+    {
+    	List<WebElement> bfrRemovList = driver.findElements(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "pdctName")));
+    	for(WebElement ele : bfrRemovList)
+    	{
+    		System.out.println(ele.getText());
+    	}
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "removeElmt"))).click();
+    	log.info("remove Elmt clicked");
+    	List<WebElement> afterRemovList = driver.findElements(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "pdctName")));
+    	for(WebElement ele : afterRemovList)
+    	{
+    		System.out.println(ele.getText());
+    	}
+    	bfrRemovList.removeAll(afterRemovList);
+    	boolean rslt;
+    	if(bfrRemovList.isEmpty())
+    	{
+    		rslt = false;
+    	}
+    	else
+    	{
+    		rslt = true;
+    	}
+    	return rslt;
+    }
+    
+    public boolean verifyContShopp()
+    {
+    	String tvPageTitle = "TV";
+    	String mobPageTitle = "Mobile";
+    	boolean rslt = false;
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "contShopp"))).click(); //clicking on continue shopping
+    	if(driver.getTitle().equals(mobPageTitle)|| driver.getTitle().equals(tvPageTitle))
+    	{
+    		rslt = true;
+    	}
+    	return rslt;
+    }
+    
+    public boolean verifySuccCoupMsg()
+    {
+    	WebElement discountTxtBox = driver.findElement(By.id(ReadPropertyFile.propertyRead(cartPrptyPath, "couTxtBox")));
+    	discountTxtBox.sendKeys("GURU50");
+    	log.info("code given in txt box");
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "applyLink"))).click();
+    	log.info("apply link clicked");
+    	String actMsg = null;
+    	String expMsg = "Coupon code \"GURU50\" was applied.";
+    	boolean rslt = false;
+    	try
+    	{
+    		actMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "succCoupMsg")))).getText();
+    		log.info("discount msg came");
+    		if(actMsg.contains(expMsg))
+    		{
+    			rslt = true;
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    	}
+    	return rslt;
     }
 }
