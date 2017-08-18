@@ -59,6 +59,7 @@ public class HomePage
 	public MobilePage clickOnMobile()
 	{
 		driver.findElement(By.xpath(ReadPropertyFile.propertyRead(homePrptyPath, "mobile"))).click();
+		log.info("mobile link clicked");
 		return new MobilePage(driver);
 	}
 	
@@ -102,12 +103,12 @@ public class HomePage
 		try
 		{
 			List<WebElement> removeList = driver.findElements(By.xpath(ReadPropertyFile.propertyRead(homePrptyPath, "removeLink")));
-			for(WebElement remove : removeList)
-			{
-				remove.click();
+//			for(WebElement remove : removeList)
+//			{
+				removeList.get(0).click();
 				alert = driver.switchTo().alert();
 				alert.accept();
-			}
+//			}
 			removeSuccMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(ReadPropertyFile.propertyRead(homePrptyPath, "removeSuccMsg")))).getText();
 		    System.out.println(removeSuccMsg);
 			log.info("Remove successful msg came");

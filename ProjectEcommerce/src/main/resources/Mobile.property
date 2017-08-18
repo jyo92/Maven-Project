@@ -18,6 +18,8 @@ prdctList = product-name
 SonyXperia cart button
 cartXp = //a[@title='Xperia']//following::div[1]//*[@title="Add to Cart"]
 
+cartGalaxy = //a[@title='Samsung Galaxy']//following::div[1]//*[@title="Add to Cart"]
+
 compXp = //a[@title='Xperia']//following::div[1]//*[text()='Add to Compare']
 
 compIPhn = //a[@title='IPhone']//following::div[1]//*[text()='Add to Compare']

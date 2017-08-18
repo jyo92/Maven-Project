@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.tests.MyAccountPageTest">
+      <class name="com.selenium.tests.HomePageTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="testChangePwd"/>
+          <include name="testItemRemoveFromCart"/>
           <include name="setUp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.selenium.tests.MyAccountPageTest -->
+      </class> <!-- com.selenium.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

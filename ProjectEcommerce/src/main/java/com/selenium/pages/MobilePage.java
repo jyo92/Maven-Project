@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -32,7 +33,9 @@ public List<String> unsortdMobList;
 public List<String> expSortdMobList;
 public List<WebElement> srtByNameList;
 public List<String> actuSortdMobList;
+
 public WebDriverWait wait;
+public Logger log;
 
 public Set<String> expCompItemSet;
 public Set<String> actCompItemSet;
@@ -48,6 +51,7 @@ public MobilePage(WebDriver driver)
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	wait = new WebDriverWait(driver, 10);
     jse = (JavascriptExecutor)driver;
+    log = Logger.getLogger(MobilePage.class);
 }
 
 public String getMobPgeHdr()
@@ -112,11 +116,6 @@ public boolean compareTwoMobLists()
 	if(expSortdMobList.isEmpty())
 	{
 		sortedResult = true;
-		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),4,2, "pass");
-	}
-	else
-	{
-		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),4,2, "fail");
 	}
 	return sortedResult;
 }
@@ -125,6 +124,11 @@ public CartPage addToCart()
 {
 	sonyXPcartBtn = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(MobPrtyLoc, "cartXp")));
 	sonyXPcartBtn.click();
+	log.info("sony XPeria cartBtn clicked");
+	driver.navigate().back();
+	WebElement galaxyCartBtn = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(MobPrtyLoc, "cartGalaxy")));
+	galaxyCartBtn.click();
+	log.info("galaxy cartBtn clicked");
 	return new CartPage(driver); 
 }
 
@@ -186,11 +190,6 @@ public boolean compSetsOfMobile()
 	if(expSet.isEmpty())
 	{
 		compResult = true;
-		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),6,2, "pass");
-	}
-	else
-	{
-		WriteExcel.excelWriting(ReadPropertyFile.propertyRead(MobPrtyLoc, "excelPath"), ReadPropertyFile.propertyRead(MobPrtyLoc, "mobileSheet"),6,2, "fail");
 	}
 	return compResult;
 }

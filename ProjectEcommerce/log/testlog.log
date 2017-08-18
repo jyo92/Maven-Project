@@ -271,3 +271,160 @@
 2017-08-14 00:37:04,854 - com.selenium.pages.MyAccountPage -INFO - new pwd given again
 2017-08-14 00:37:06,463 - com.selenium.pages.MyAccountPage -INFO - save btn clicked
 2017-08-14 00:37:06,741 - com.selenium.pages.MyAccountPage -INFO - pwd change success msg came
+2017-08-14 13:38:35,066 - com.selenium.pages.MyAccountPage -INFO - Mobile Link clicked........
+2017-08-14 13:38:36,424 - com.selenium.pages.MyAccountPage -INFO - Add to wishlist clicked
+2017-08-17 22:59:53,039 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 22:59:55,636 - com.selenium.pages.MobilePage -INFO - going back to mobile page
+2017-08-17 22:59:57,987 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 22:59:59,241 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:00:01,511 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:00:02,758 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:00:09,389 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:01:59,546 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:02:00,427 - com.selenium.pages.MobilePage -INFO - going back to mobile page
+2017-08-17 23:02:22,692 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:02:23,127 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:02:25,330 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:02:25,578 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:02:30,240 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:16:29,386 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:16:32,517 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:16:32,832 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:16:35,548 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:16:35,792 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:16:40,829 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:29:40,854 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:29:42,157 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:29:44,570 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:29:46,456 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:29:46,699 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:29:51,227 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:29:54,566 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:29:57,294 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:31:26,911 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:31:32,474 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:31:32,779 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:31:34,487 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:31:34,836 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:31:39,415 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:31:45,099 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:31:47,661 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:32:18,018 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:32:21,364 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:32:21,675 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:32:23,611 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:32:23,881 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:32:28,565 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:32:33,982 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:32:36,679 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:47:15,642 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:47:18,830 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:47:19,141 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:47:20,919 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:47:21,317 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:47:30,261 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:47:36,185 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:47:38,978 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:55:00,352 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:55:03,641 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-17 23:55:03,922 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-17 23:55:11,091 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-17 23:55:11,336 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-17 23:55:29,386 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-17 23:55:44,041 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-17 23:55:52,151 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:03:55,137 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:03:58,464 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:03:58,814 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-18 00:04:00,708 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-18 00:04:01,018 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-18 00:04:08,981 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-18 00:04:15,362 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:04:18,314 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:09:57,877 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:10:01,116 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:10:01,470 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-18 00:10:03,264 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-18 00:10:03,518 - com.selenium.pages.CartPage -INFO - discount msg came
+2017-08-18 00:10:22,804 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-18 00:10:30,374 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:10:32,995 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:12:22,599 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:12:25,999 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:12:26,356 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-18 00:12:28,130 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-18 00:12:57,360 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-18 00:13:25,070 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:13:27,586 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:21:23,264 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-18 00:21:25,276 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:21:28,450 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-18 00:21:28,784 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-18 00:21:30,445 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-18 00:22:54,945 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-18 00:23:00,855 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-18 00:23:02,570 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-18 00:23:05,283 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:00:33,141 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:00:35,682 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:00:39,058 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:00:39,372 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:02:46,163 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:03:09,591 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:03:11,722 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:03:15,073 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:03:37,693 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:04:46,373 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:04:48,603 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:04:51,756 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:05:05,943 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:09:07,750 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:09:10,200 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:09:13,640 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:09:14,032 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:09:16,023 - com.selenium.pages.HomePage -INFO - Remove successful msg came
+2017-08-19 00:21:24,488 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-19 00:21:25,279 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-19 00:21:25,520 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-19 00:21:25,586 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-19 00:21:32,190 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:21:35,053 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:21:38,581 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:21:38,863 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:21:40,746 - com.selenium.pages.HomePage -INFO - Remove successful msg came
+2017-08-19 00:22:22,789 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-19 00:22:23,338 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-19 00:22:23,610 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-19 00:22:23,713 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-19 00:22:26,382 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:22:28,613 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:22:33,145 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:22:33,452 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:22:35,377 - com.selenium.pages.HomePage -INFO - Remove successful msg came
+2017-08-19 00:23:07,628 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-19 00:23:08,312 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-19 00:23:08,568 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-19 00:23:08,640 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-19 00:23:09,500 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:23:13,651 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:23:17,006 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:23:17,308 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:23:19,205 - com.selenium.pages.HomePage -INFO - Remove successful msg came
+2017-08-19 00:40:35,873 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-19 00:40:36,416 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-19 00:40:37,035 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-19 00:40:37,106 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-19 00:40:39,911 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:40:42,522 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:40:45,903 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:40:46,189 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:40:47,998 - com.selenium.pages.HomePage -INFO - Remove successful msg came
+2017-08-19 00:42:53,179 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-19 00:42:53,886 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-19 00:42:54,629 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-19 00:42:54,714 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-19 00:42:57,552 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-19 00:43:00,713 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-19 00:43:04,054 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-19 00:43:04,361 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-19 00:43:06,140 - com.selenium.pages.HomePage -INFO - Remove successful msg came

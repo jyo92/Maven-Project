@@ -131,7 +131,7 @@ public class CartPage
     public boolean verifySuccCoupMsg()
     {
     	WebElement discountTxtBox = driver.findElement(By.id(ReadPropertyFile.propertyRead(cartPrptyPath, "couTxtBox")));
-    	discountTxtBox.sendKeys("GURU50");
+    	discountTxtBox.sendKeys("GURU5");
     	log.info("code given in txt box");
     	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "applyLink"))).click();
     	log.info("apply link clicked");
@@ -152,5 +152,10 @@ public class CartPage
     		e.printStackTrace();
     	}
     	return rslt;
+    }
+    
+    public void backToHomePage()
+    {
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "logo"))).click();
     }
 }

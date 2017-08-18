@@ -18,4 +18,6 @@ couTxtBox = coupon_code
 
 applyLink = //button[@value='Apply']
 
+logo = //*[@class='logo']
+
 succCoupMsg = //li[@class='success-msg']

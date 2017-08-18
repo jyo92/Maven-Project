@@ -35,33 +35,33 @@ public void testWshListShre()
 	Assert.assertTrue(myAccPage.addToWishList(),"wish list is not share successfully") ;
 }
 
-@Test(priority = 1)
-public void testItemTotalPrice()
-{
-	loginPage = homePage.clickMyAccount();
-	myAccPage = loginPage.logIn();
-	Assert.assertTrue(myAccPage.chkQtyAndPrice(),"total price is not correct");
-}
-
-@Test(priority = 2)
-public void testSuccOrderGen() throws Exception
-{
-	loginPage = homePage.clickMyAccount();
-	myAccPage = loginPage.logIn();
-	Assert.assertTrue(myAccPage.vfySuccOrderGen(),"order is not placed successfully");
-}
-
-@Test()
-public void testChangePwd()
-{
-	loginPage = homePage.clickMyAccount();
-	myAccPage = loginPage.logIn();
-	Assert.assertTrue(myAccPage.changePwd());
-}
-
-@AfterClass
-public void closeBrowser()
-{
-	browserClose();
-}
+//@Test(priority = 1)
+//public void testItemTotalPrice()
+//{
+//	loginPage = homePage.clickMyAccount();
+//	myAccPage = loginPage.logIn();
+//	Assert.assertTrue(myAccPage.chkQtyAndPrice(),"total price is not correct");
+//}
+//
+//@Test(priority = 2)
+//public void testSuccOrderGen() throws Exception
+//{
+//	loginPage = homePage.clickMyAccount();
+//	myAccPage = loginPage.logIn();
+//	Assert.assertTrue(myAccPage.vfySuccOrderGen(),"order is not placed successfully");
+//}
+//
+//@Test()
+//public void testChangePwd()
+//{
+//	loginPage = homePage.clickMyAccount();
+//	myAccPage = loginPage.logIn();
+//	Assert.assertTrue(myAccPage.changePwd());
+//}
+//
+//@AfterClass
+//public void closeBrowser()
+//{
+//	browserClose();
+//}
 }
