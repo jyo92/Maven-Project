@@ -63,12 +63,14 @@ public class LoginPage
     		{
     			loginRslt = true;
     			System.out.println("Error message came");
+    			driver.navigate().refresh();
     		}
     	}
     	catch(Exception e)
     	{
     		e.printStackTrace();
     		System.out.println("no Error message");
+    		driver.navigate().refresh();
     	}
     	return loginRslt;
     }
@@ -84,12 +86,14 @@ public class LoginPage
     		{
     			loginRslt = true;
     			System.out.println("Error message came");
+    			driver.navigate().refresh();
     		}
     	}
     	catch(Exception e)
     	{
     		e.printStackTrace();
     		System.out.println("no Error message");
+    		driver.navigate().refresh();
     	}
     	return loginRslt;
     }

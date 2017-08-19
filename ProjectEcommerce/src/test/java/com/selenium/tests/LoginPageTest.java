@@ -8,6 +8,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
+import com.selenium.common.WriteExcel;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.LoginPage;
 import com.selenium.pages.MyAccountPage;
@@ -15,10 +16,12 @@ import com.selenium.pages.MyAccountPage;
 @Listeners(com.selenium.common.Listeners.class)
 public class LoginPageTest extends BrowserDetails
 {
-	private WebDriver driver;
-	private HomePage homePage;
-	private LoginPage loginPage;
-	private MyAccountPage myAccPage;
+	public WebDriver driver;
+	public HomePage homePage;
+	public LoginPage loginPage;
+	public MyAccountPage myAccPage;
+	public String excelPath = "./src/main/resources/testData.xlsx";
+	public String sheetName = "LoginPageTCs";
 	
 	@BeforeClass
 	public void setUp()
@@ -28,32 +31,72 @@ public class LoginPageTest extends BrowserDetails
 		homePage = new HomePage(driver);
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 0)
 	public void testLoginOnlyUname()
 	{
 		loginPage = homePage.clickMyAccount();
-		Assert.assertTrue(loginPage.onlyUserNameLogin(), "no error message");
+		if(loginPage.onlyUserNameLogin())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 3, 6, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 3, 6, "fail");
+		}
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void testLoginOnlyPwd()
 	{
-		loginPage = homePage.clickMyAccount();
-		Assert.assertTrue(loginPage.onlyPwdLogin(), "no error message");
+		if(loginPage.onlyPwdLogin())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 4, 6, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 4, 6, "fail");
+		}
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void testLogIn()
 	{
-		loginPage = homePage.clickMyAccount();
 		myAccPage = loginPage.logIn();
-		Assert.assertTrue(myAccPage.verifyAcctDbdMsg(), "login failed");
+		if(myAccPage.verifyAcctDbdMsg())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 5, 6, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 5, 6, "fail");
+		}
+	}
+	
+	@Test(priority = 3)
+	public void testSignOut()
+	{
+		if(myAccPage.verifyLogOut())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 6, 6, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 6, 6, "fail");
+		}
 	}
 
-	@Test
-	public void testNewLogIn()
+	@Test(enabled = false)
+	public void testNewLogIn() throws Exception
 	{
+		Thread.sleep(6000);
 		loginPage = homePage.clickMyAccount();
-		Assert.assertTrue(loginPage.createNewAccount());
+		if(loginPage.createNewAccount())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 7, 6, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 7, 6, "fail");
+		}
 	}
 }

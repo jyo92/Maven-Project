@@ -154,8 +154,7 @@ public boolean vfyWishItmIsPresent()
 
 public boolean chkQtyAndPrice()
 {
-	if(vfyWishItmIsPresent()) //checking wish list is empty or not
-	{
+
 		driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "addCartBtn"))).click();
 		log.info("Add to cart button clicked");
 		WebElement qtyBox = driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "qtyBox")));
@@ -165,20 +164,20 @@ public boolean chkQtyAndPrice()
 		try
 		{
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "updateBtn")))).click();
+			log.info("update button clicked");
 			checkTotalPrice = vfySubtotal(qty);
 		}
 		catch(Exception e)
 		{
 			System.out.println(e);
 		}
-	}
 	return checkTotalPrice;
 }
 
 public boolean vfySubtotal(int qty)
 {
-	String priceString = (driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "price"))).getText());
-	String totalpriceString = (driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "totalPrice"))).getText());
+	String priceString = (driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "price"))).getText()).replaceAll("[,]", "");
+	String totalpriceString = (driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "totalPrice"))).getText()).replaceAll("[,]", "");
 	double price = Double.parseDouble(priceString.substring(1));
 	double actTotal = price * qty;
 	double expTotal = Double.parseDouble(totalpriceString.substring(1));
@@ -192,36 +191,31 @@ public boolean vfySubtotal(int qty)
 
 public boolean vfySuccOrderGen() throws Exception
 {
-	if(vfyWishItmIsPresent())  //checking wish list is empty or not
-	{
 		try
 		{
-			driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "addCartBtn"))).click();
-			log.info("Add to cart button clicked");	
-			Select select = new Select(driver.findElement(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "regIDdd"))));
-			select.selectByVisibleText(ReadPropertyFile.propertyRead(accountPrtyFilePath, "ny"));
-			log.info("state dd selected");
-			driver.findElement(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "postCode"))).sendKeys("542222");
-			log.info("postal code given");
-			driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "estimateLnk"))).click();
-			log.info("estimate link clicked");
-			driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "checkout"))).click();
-		    log.info("proceed to checkout clicked");
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "continueBtn")))).click();
-		    log.info("shipping address is confirmed");
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "shipgMtdCont")))).click();
-		    log.info("shipping method is selected");
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "monyOdrRadio")))).click();
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "payInfoCont")))).click();
-		    log.info("payment information is given");
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "plceOrdBtn")))).click();
-		    log.info("place order clicked");
-		    odrRslt = succOrderMsgRslt();//checking successful order message is generated.
+				Select select = new Select(driver.findElement(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "regIDdd"))));
+				select.selectByVisibleText(ReadPropertyFile.propertyRead(accountPrtyFilePath, "ny"));
+				log.info("state dd selected");
+				driver.findElement(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "postCode"))).sendKeys("542222");
+				log.info("postal code given");
+				driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "estimateLnk"))).click();
+				log.info("estimate link clicked");
+				driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "checkout"))).click();
+			    log.info("proceed to checkout clicked");
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "continueBtn")))).click();
+			    log.info("shipping address is confirmed");
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "shipgMtdCont")))).click();
+			    log.info("shipping method is selected");
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(ReadPropertyFile.propertyRead(accountPrtyFilePath, "monyOdrRadio")))).click();
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "payInfoCont")))).click();
+			    log.info("payment information is given");
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "plceOrdBtn")))).click();
+			    log.info("place order clicked");
+			    odrRslt = succOrderMsgRslt();//checking successful order message is generated.
 	}
 	catch(Exception e)
 	{
 		e.printStackTrace();
-	}
 	}
 	return odrRslt;
 }
@@ -270,5 +264,28 @@ public boolean changePwd()
 		e.printStackTrace();
 	}
 	return pwdChgRslt;
+}
+
+public boolean verifyLogOut()
+{
+	boolean logOutRslt = false; //get result of logout test 
+	try
+	{
+	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "accountLink"))).click();
+	log.info("my account clicked");
+	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "logOutLink"))).click();
+	log.info("log out clicked");
+	String logOutActMsg= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ReadPropertyFile.propertyRead(accountPrtyFilePath, "logOutMsg")))).getText();
+	log.info("successful log out message");
+	String logOutExpMsg = "You are now logged out";
+	System.out.println(logOutActMsg);
+	System.out.println(logOutExpMsg.toUpperCase());
+	logOutRslt = logOutActMsg.contains(logOutExpMsg.toUpperCase());
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+	return logOutRslt;
 }
 }

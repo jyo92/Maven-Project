@@ -75,3 +75,9 @@ confNewPwd = confirmation
 saveBtn = //button[@title='Save'] 
 
 chgPwdSuccMsg = //*[text()='The account information has been saved.']
+
+accountLink = //span[text()='Account']
+
+logOutLink = //*[@title='Log Out']
+
+logOutMsg = //*[@class='page-title']

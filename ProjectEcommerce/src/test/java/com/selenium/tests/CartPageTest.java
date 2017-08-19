@@ -16,9 +16,9 @@ import com.selenium.pages.MobilePage;
 @Listeners(com.selenium.common.Listeners.class)
 public class CartPageTest extends BrowserDetails
 {
-	private WebDriver driver;
-	private HomePage homePage;
-	private CartPage cartPage;
+	public WebDriver driver;
+	public HomePage homePage;
+	public CartPage cartPage;
 	public MobilePage mobilePage;
 	public String excelPath = "./src/main/resources/testData.xlsx";
 	public String sheetName = "CartPageTCs";

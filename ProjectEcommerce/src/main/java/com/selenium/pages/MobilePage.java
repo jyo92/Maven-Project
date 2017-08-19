@@ -173,6 +173,7 @@ public Set<String> getAddToCompActSet()
 		e.printStackTrace();
 	}
 	driver.close();
+	driver.switchTo().window(parentWindowHndle);//coming back to parent window
 	return actCompItemSet;
 }
 public boolean verifyCompPgeHdr()
@@ -201,10 +202,9 @@ public boolean verifyXperiaPrice()
 	return expPrice.equals(actPrice);
 }
 
-public boolean backToHomePage() throws Exception
+public boolean backToHomePage()
 {
 	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(MobPrtyLoc, "logo"))).click();
-	Thread.sleep(3000);
 	return (driver.getTitle().equals("Home page"));
 }
 

@@ -15,9 +15,11 @@ import com.selenium.pages.MobilePage;
 @Listeners(com.selenium.common.Listeners.class)
 public class MobilePageTest extends BrowserDetails
 {
-	private WebDriver driver;
-	private HomePage homePage;
-	private MobilePage mobPage;
+	public WebDriver driver;
+	public HomePage homePage;
+	public MobilePage mobPage;
+	public String excelPath = "./src/main/resources/testData.xlsx";
+	public String sheetName = "MobilePageTCs";
 	
 	@BeforeClass
 	public void setUp()
@@ -27,38 +29,72 @@ public class MobilePageTest extends BrowserDetails
 		homePage = new HomePage(driver);
 	}
 	
-//	@Test(enabled = false)
-//	public void testXpPrice()
-//	{
-//		mobPage = homePage.clickOnMobile();
-//		Assert.assertTrue(mobPage.verifyXperiaPrice(), "Xperia price is not correct");
-//	}
-//	
-//	@Test(priority = 0)
-//	public void testSortByName()
-//	{
-//		mobPage = homePage.clickOnMobile();
-//		Assert.assertTrue(mobPage.compareTwoMobLists(), "Mobile list is not sorted");
-//	}
-//	
-//	@Test(priority = 1)
-//	public void testAddToCompItms()
-//	{
-//		mobPage = homePage.clickOnMobile();
-//		Assert.assertTrue(mobPage.compSetsOfMobile(), "Mobile comparison list is not correct");
-//	}
-//	
-//	@Test(priority = 2)
-//	public void testCompPgeHdr()
-//	{
-//		Assert.assertTrue(mobPage.verifyCompPgeHdr(), "Compare page header is not correct");
-//	}
 	
-	@Test(priority = 3)
-	public void testBackToHomePge() throws Exception
+	@Test(priority = 0)
+	public void testSortByName()
 	{
 		mobPage = homePage.clickOnMobile();
-	    Assert.assertTrue(mobPage.backToHomePage());
+		if(mobPage.compareTwoMobLists())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 4, 5, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 4, 5, "fail");
+		}
+	}
+	
+	@Test(priority = 1)
+	public void testCompPgeHdr()
+	{
+		if(mobPage.verifyCompPgeHdr())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 5, 5, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 5, 5, "fail");
+		}
+	}
+	
+	@Test(priority = 2)
+	public void testAddToCompItms()
+	{
+		if(mobPage.compSetsOfMobile())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 6, 5, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 6, 5, "fail");
+		}
+	}
+	
+	@Test(priority = 3)
+	public void testBackToHomePge()
+	{
+		if(mobPage.backToHomePage())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 7, 5, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 7, 5, "fail");
+		}
+	}
+	
+	@Test(priority = 4)
+	public void testXpPrice()
+	{
+		mobPage = homePage.clickOnMobile();
+		if(mobPage.verifyXperiaPrice())
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 8, 5, "pass");
+		}
+		else
+		{
+			WriteExcel.excelWriting(excelPath, sheetName, 8, 5, "fail");
+		}
 	}
 	
 	@AfterClass

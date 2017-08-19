@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28649" started-at="2017-08-18T19:12:39Z" finished-at="2017-08-18T19:13:08Z">
+  <suite name="Default suite" duration-ms="43360" started-at="2017-08-19T18:40:33Z" finished-at="2017-08-19T18:41:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28649" started-at="2017-08-18T19:12:39Z" finished-at="2017-08-18T19:13:08Z">
-      <class name="com.selenium.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="setUp" is-config="true" duration-ms="10124" started-at="2017-08-19T00:42:39Z" finished-at="2017-08-19T00:42:50Z">
+    <test name="Default test" duration-ms="43360" started-at="2017-08-19T18:40:33Z" finished-at="2017-08-19T18:41:16Z">
+      <class name="com.selenium.tests.MyAccountPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="setUp" is-config="true" duration-ms="9317" started-at="2017-08-20T00:10:33Z" finished-at="2017-08-20T00:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testHomePgeTitle()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="testHomePgeTitle" duration-ms="2803" started-at="2017-08-19T00:42:50Z" finished-at="2017-08-19T00:42:52Z">
+        <test-method status="PASS" signature="testWshListShre()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="testWshListShre" duration-ms="15965" started-at="2017-08-20T00:10:42Z" finished-at="2017-08-20T00:10:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePgeTitle -->
-        <test-method status="PASS" signature="testEmptyCartMsg()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="testEmptyCartMsg" duration-ms="1321" started-at="2017-08-19T00:42:52Z" finished-at="2017-08-19T00:42:54Z">
+        </test-method> <!-- testWshListShre -->
+        <test-method status="PASS" signature="testItemTotalPrice()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="testItemTotalPrice" duration-ms="5349" started-at="2017-08-20T00:10:58Z" finished-at="2017-08-20T00:11:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyCartMsg -->
-        <test-method status="PASS" signature="testAccOptions()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="testAccOptions" duration-ms="1132" started-at="2017-08-19T00:42:54Z" finished-at="2017-08-19T00:42:55Z">
+        </test-method> <!-- testItemTotalPrice -->
+        <test-method status="PASS" signature="testSuccOrderGen()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="testSuccOrderGen" duration-ms="10503" started-at="2017-08-20T00:11:04Z" finished-at="2017-08-20T00:11:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAccOptions -->
-        <test-method status="PASS" signature="testMobPgeHdr()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="testMobPgeHdr" duration-ms="2669" started-at="2017-08-19T00:42:55Z" finished-at="2017-08-19T00:42:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMobPgeHdr -->
-        <test-method status="PASS" signature="testItemRemoveFromCart()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="testItemRemoveFromCart" duration-ms="8698" started-at="2017-08-19T00:42:58Z" finished-at="2017-08-19T00:43:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testItemRemoveFromCart -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.tests.HomePageTest@27efef64]" name="closeBrowser" is-config="true" duration-ms="1829" started-at="2017-08-19T00:43:06Z" finished-at="2017-08-19T00:43:08Z">
+        </test-method> <!-- testSuccOrderGen -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.tests.MyAccountPageTest@27efef64]" name="closeBrowser" is-config="true" duration-ms="2141" started-at="2017-08-20T00:11:14Z" finished-at="2017-08-20T00:11:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.selenium.tests.HomePageTest -->
+      </class> <!-- com.selenium.tests.MyAccountPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
