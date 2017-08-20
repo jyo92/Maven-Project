@@ -1,14 +1,12 @@
 package com.selenium.tests;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.selenium.common.BrowserDetails;
-import com.selenium.common.ReadExcel;
 import com.selenium.common.WriteExcel;
 import com.selenium.pages.CartPage;
 import com.selenium.pages.HomePage;

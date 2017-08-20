@@ -1,11 +1,8 @@
 package com.selenium.pages;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.apache.regexp.RE;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.selenium.common.RandomNumber;
 import com.selenium.common.ReadExcel;
 import com.selenium.common.ReadPropertyFile;
-import com.selenium.common.UploadFile;
 
 public class MyAccountPage 
 {

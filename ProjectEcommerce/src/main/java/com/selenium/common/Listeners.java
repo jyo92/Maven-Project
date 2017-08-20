@@ -3,17 +3,12 @@ package com.selenium.common;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
-import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-
-import com.selenium.tests.HomePageTest;
-import com.sun.jna.platform.FileUtils;
 
 public class Listeners extends TestListenerAdapter
 {
