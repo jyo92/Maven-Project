@@ -153,6 +153,6 @@ public class CartPage
     
     public void backToHomePage()
     {
-    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "logo"))).click();
+    	driver.findElement(By.xpath(ReadPropertyFile.propertyRead(cartPrptyPath, "companyLogo"))).click();
     }
 }
