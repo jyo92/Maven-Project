@@ -5,8 +5,11 @@
     <classes>
       <class name="com.selenium.tests.MyAccountPageTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="testSuccOrderGen"/>
           <include name="setUp"/>
+          <include name="testWshListShre"/>
+          <include name="testItemTotalPrice"/>
         </methods>
       </class> <!-- com.selenium.tests.MyAccountPageTest -->
     </classes>

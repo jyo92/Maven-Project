@@ -11,7 +11,7 @@ import com.selenium.pages.HomePage;
 import com.selenium.pages.LoginPage;
 import com.selenium.pages.MyAccountPage;
 
-//@Listeners(com.selenium.common.Listeners.class)
+@Listeners(com.selenium.common.Listeners.class)
 public class LoginPageTest extends BrowserDetails
 {
 	public WebDriver driver;

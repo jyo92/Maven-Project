@@ -8,7 +8,7 @@
 <!--   <parameter name="browserType" value="chrome"></parameter> -->
 <!--   <parameter name="appURL" value="http://automationpractice.com/index.php"></parameter> -->
     <classes>
-<!--  	  <class name="com.selenium.common.BrowserDetails"/> -->
+      	  <!-- <class name="com.selenium.common.BrowserDetails"/> -->
 	      <class name="com.selenium.tests.HomePageTest"/>
 	      <class name="com.selenium.tests.MobilePageTest"/>
 	      <class name="com.selenium.tests.CartPageTest"/>

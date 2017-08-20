@@ -17,21 +17,21 @@ public class BrowserDetails
 
 	private void setDriver(String browserType, String appURL)
 	{
-//		switch(browserType)
-//		{
-//		case "chrome":
+		switch(browserType)
+		{
+		case "chrome":
 			driver = initChromeDriver(appURL);
-//			break;
-//		case "firefox":
-//			driver = initFirefoxDriver(appURL);
-//			break;
-//		case "ie":
-//			driver = initIeDriver(appURL);
-//			break;
-//		default:
-//			driver = initChromeDriver(appURL);
-//		
-//		}
+			break;
+		case "firefox":
+			driver = initFirefoxDriver(appURL);
+			break;
+		case "ie":
+			driver = initIeDriver(appURL);
+			break;
+		default:
+			driver = initChromeDriver(appURL);
+		
+		}
 	}
 
 
