@@ -11,7 +11,7 @@ import com.selenium.common.WriteExcel;
 import com.selenium.pages.MyAccountPage;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.LoginPage;
-@Listeners(com.selenium.common.Listeners.class)
+//@Listeners(com.selenium.common.Listeners.class)
 public class MyAccountPageTest extends BrowserDetails 
 {
 public WebDriver driver;

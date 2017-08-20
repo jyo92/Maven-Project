@@ -12,7 +12,7 @@ import com.selenium.pages.CartPage;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.MobilePage;
 
-@Listeners(com.selenium.common.Listeners.class)
+//@Listeners(com.selenium.common.Listeners.class)
 public class HomePageTest extends BrowserDetails
 {
 	public WebDriver driver;

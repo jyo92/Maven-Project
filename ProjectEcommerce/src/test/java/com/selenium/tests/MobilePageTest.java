@@ -10,7 +10,7 @@ import com.selenium.common.BrowserDetails;
 import com.selenium.common.WriteExcel;
 import com.selenium.pages.HomePage;
 import com.selenium.pages.MobilePage;
-@Listeners(com.selenium.common.Listeners.class)
+//@Listeners(com.selenium.common.Listeners.class)
 public class MobilePageTest extends BrowserDetails
 {
 	public WebDriver driver;
