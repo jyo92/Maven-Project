@@ -2,13 +2,13 @@ package com.selenium.common;
 
 import java.io.File;
 import java.io.IOException;
-
+import org.testng.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
+//import org.testng.ITestContext;
+//import org.testng.ITestResult;
+//import org.testng.TestListenerAdapter;
 
 public class Listeners extends TestListenerAdapter
 {
@@ -18,21 +18,18 @@ public class Listeners extends TestListenerAdapter
 	@Override
 	public void onFinish(ITestContext arg0) 
 	{
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onStart(ITestContext arg0) 
 	{
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) 
 	{
-		// TODO Auto-generated method stub
 		
 	}
 
