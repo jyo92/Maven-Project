@@ -763,3 +763,117 @@
 2017-08-20 14:27:00,969 - com.selenium.pages.MyAccountPage -INFO - shipping method is selected
 2017-08-20 14:27:02,119 - com.selenium.pages.MyAccountPage -INFO - payment information is given
 2017-08-20 14:27:04,891 - com.selenium.pages.MyAccountPage -INFO - place order clicked
+2017-08-30 22:58:06,946 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 22:58:10,522 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 22:58:29,444 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 22:58:29,873 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-30 22:58:32,036 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-30 22:58:51,814 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-30 22:58:57,741 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 22:58:59,760 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 22:59:02,470 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:01:29,072 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:01:31,960 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:01:39,408 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:01:39,707 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-30 23:01:43,255 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-30 23:02:02,406 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-30 23:02:07,417 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:02:09,295 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:02:12,641 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:03:32,026 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-30 23:03:32,509 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-30 23:03:32,984 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-30 23:03:33,038 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-30 23:03:38,790 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:03:43,523 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:03:47,642 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:03:47,964 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-30 23:05:23,753 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:05:27,356 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:05:31,275 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:05:31,570 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-30 23:05:33,323 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-30 23:05:51,995 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-30 23:05:56,951 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:05:58,973 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:06:02,734 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:11:08,744 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-08-30 23:11:09,359 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-08-30 23:11:10,133 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-08-30 23:11:10,212 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-08-30 23:11:14,308 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:11:17,386 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:11:22,650 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:11:23,084 - com.selenium.pages.HomePage -INFO - click on cart
+2017-08-30 23:11:40,537 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:12:00,984 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:12:38,365 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:12:40,739 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:12:44,831 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:12:45,112 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-08-30 23:12:46,998 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-08-30 23:13:14,313 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-08-30 23:13:43,450 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-08-30 23:13:45,806 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-08-30 23:13:50,400 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-08-30 23:14:14,650 - com.selenium.pages.MyAccountPage -INFO - my account clicked
+2017-08-30 23:14:16,227 - com.selenium.pages.MyAccountPage -INFO - log out clicked
+2017-08-30 23:14:16,470 - com.selenium.pages.MyAccountPage -INFO - successful log out message
+2017-08-30 23:14:37,136 - com.selenium.pages.MyAccountPage -INFO - Mobile Link clicked........
+2017-08-30 23:14:43,812 - com.selenium.pages.MyAccountPage -INFO - Add to wishlist clicked
+2017-08-30 23:14:53,436 - com.selenium.pages.MyAccountPage -INFO - share btn clicked
+2017-08-30 23:14:54,802 - com.selenium.pages.MyAccountPage -INFO - email typed
+2017-08-30 23:14:55,082 - com.selenium.pages.MyAccountPage -INFO - message typed
+2017-08-30 23:15:04,761 - com.selenium.pages.MyAccountPage -INFO - Add to cart button clicked
+2017-08-30 23:15:10,287 - com.selenium.pages.MyAccountPage -INFO - update button clicked
+2017-08-30 23:15:11,410 - com.selenium.pages.MyAccountPage -INFO - state dd selected
+2017-08-30 23:15:11,805 - com.selenium.pages.MyAccountPage -INFO - postal code given
+2017-08-30 23:15:42,581 - com.selenium.pages.MyAccountPage -INFO - estimate link clicked
+2017-08-30 23:16:04,094 - com.selenium.pages.MyAccountPage -INFO - proceed to checkout clicked
+2017-08-30 23:16:04,600 - com.selenium.pages.MyAccountPage -INFO - shipping address is confirmed
+2017-08-30 23:16:11,284 - com.selenium.pages.MyAccountPage -INFO - shipping method is selected
+2017-08-30 23:16:13,618 - com.selenium.pages.MyAccountPage -INFO - payment information is given
+2017-08-30 23:16:15,760 - com.selenium.pages.MyAccountPage -INFO - place order clicked
+2017-09-12 22:24:22,658 - com.selenium.pages.HomePage -INFO - click on empty cart
+2017-09-12 22:24:24,435 - com.selenium.pages.HomePage -INFO - close empty cart msg
+2017-09-12 22:24:25,134 - com.selenium.pages.HomePage -INFO - Account link clicked
+2017-09-12 22:24:25,210 - com.selenium.pages.HomePage -INFO - Account related items displayed
+2017-09-12 22:24:27,909 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-09-12 22:24:52,142 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-09-12 22:24:54,508 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-09-12 22:24:54,849 - com.selenium.pages.HomePage -INFO - click on cart
+2017-09-12 22:25:09,300 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-09-12 22:25:19,660 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-09-12 22:25:34,153 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-09-12 22:25:35,725 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-09-12 22:25:38,071 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-09-12 22:25:38,447 - com.selenium.pages.CartPage -INFO - code given in txt box
+2017-09-12 22:25:39,812 - com.selenium.pages.CartPage -INFO - apply link clicked
+2017-09-12 22:25:54,411 - com.selenium.pages.CartPage -INFO - remove Elmt clicked
+2017-09-12 22:25:58,265 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-09-12 22:25:59,515 - com.selenium.pages.MobilePage -INFO - sony XPeria cartBtn clicked
+2017-09-12 22:26:01,868 - com.selenium.pages.MobilePage -INFO - galaxy cartBtn clicked
+2017-09-12 22:26:20,444 - com.selenium.pages.MyAccountPage -INFO - my account clicked
+2017-09-12 22:26:21,860 - com.selenium.pages.MyAccountPage -INFO - log out clicked
+2017-09-12 22:26:22,126 - com.selenium.pages.MyAccountPage -INFO - successful log out message
+2017-09-12 22:26:36,787 - com.selenium.pages.MyAccountPage -INFO - Mobile Link clicked........
+2017-09-12 22:26:38,160 - com.selenium.pages.MyAccountPage -INFO - Add to wishlist clicked
+2017-09-12 22:26:39,490 - com.selenium.pages.MyAccountPage -INFO - share btn clicked
+2017-09-12 22:26:39,830 - com.selenium.pages.MyAccountPage -INFO - email typed
+2017-09-12 22:26:40,113 - com.selenium.pages.MyAccountPage -INFO - message typed
+2017-09-12 22:26:43,330 - com.selenium.pages.MyAccountPage -INFO - Add to cart button clicked
+2017-09-12 22:26:45,268 - com.selenium.pages.MyAccountPage -INFO - update button clicked
+2017-09-12 22:26:46,043 - com.selenium.pages.MyAccountPage -INFO - state dd selected
+2017-09-12 22:26:46,415 - com.selenium.pages.MyAccountPage -INFO - postal code given
+2017-09-12 22:26:47,894 - com.selenium.pages.MyAccountPage -INFO - estimate link clicked
+2017-09-12 22:26:49,706 - com.selenium.pages.MyAccountPage -INFO - proceed to checkout clicked
+2017-09-12 22:26:50,116 - com.selenium.pages.MyAccountPage -INFO - shipping address is confirmed
+2017-09-12 22:26:51,048 - com.selenium.pages.MyAccountPage -INFO - shipping method is selected
+2017-09-12 22:26:52,254 - com.selenium.pages.MyAccountPage -INFO - payment information is given
+2017-09-12 22:26:52,934 - com.selenium.pages.MyAccountPage -INFO - place order clicked
+2017-11-13 09:10:13,266 - com.selenium.pages.MyAccountPage -INFO - my account clicked
+2017-11-13 09:10:14,566 - com.selenium.pages.MyAccountPage -INFO - log out clicked
+2017-11-13 09:10:14,800 - com.selenium.pages.MyAccountPage -INFO - successful log out message
+2017-11-13 09:11:12,201 - com.selenium.pages.HomePage -INFO - mobile link clicked
+2017-11-13 09:11:20,551 - com.selenium.pages.HomePage -INFO - mobile link clicked

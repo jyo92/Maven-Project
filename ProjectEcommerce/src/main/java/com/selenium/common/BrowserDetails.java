@@ -40,7 +40,7 @@ public class BrowserDetails
 		System.out.println("Initializing chrome browser");
 		System.setProperty("webdriver.chrome.driver",ReadPropertyFile.propertyRead(driverPropertyFilePath,"chromePath"));
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.get(URL);
 		return driver;
 	}

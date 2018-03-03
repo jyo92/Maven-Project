@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.tests.MyAccountPageTest">
+      <class name="com.selenium.tests.MobilePageTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="testSuccOrderGen"/>
           <include name="setUp"/>
-          <include name="testWshListShre"/>
-          <include name="testItemTotalPrice"/>
+          <include name="testCompPgeHdr"/>
+          <include name="closeBrowser"/>
+          <include name="testAddToCompItms"/>
         </methods>
-      </class> <!-- com.selenium.tests.MyAccountPageTest -->
+      </class> <!-- com.selenium.tests.MobilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
