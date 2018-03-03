@@ -83,6 +83,7 @@ public class BrowserDetails
 	public void browserClose()
 	{
 		driver.quit();
+		System.out.println("Browser Closed");
 	}
 
 }
